@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-ant-app/static/css/main.62d4db45.chunk.css",
+    "main.js": "/react-ant-app/static/js/main.7234bf10.chunk.js",
+    "main.js.map": "/react-ant-app/static/js/main.7234bf10.chunk.js.map",
+    "runtime-main.js": "/react-ant-app/static/js/runtime-main.76fd7994.js",
+    "runtime-main.js.map": "/react-ant-app/static/js/runtime-main.76fd7994.js.map",
+    "static/css/2.9c8c8187.chunk.css": "/react-ant-app/static/css/2.9c8c8187.chunk.css",
+    "static/js/2.20c49062.chunk.js": "/react-ant-app/static/js/2.20c49062.chunk.js",
+    "static/js/2.20c49062.chunk.js.map": "/react-ant-app/static/js/2.20c49062.chunk.js.map",
+    "index.html": "/react-ant-app/index.html",
+    "precache-manifest.cd817ff9e694b48ac1017d5da9693230.js": "/react-ant-app/precache-manifest.cd817ff9e694b48ac1017d5da9693230.js",
+    "service-worker.js": "/react-ant-app/service-worker.js",
+    "static/css/2.9c8c8187.chunk.css.map": "/react-ant-app/static/css/2.9c8c8187.chunk.css.map",
+    "static/css/main.62d4db45.chunk.css.map": "/react-ant-app/static/css/main.62d4db45.chunk.css.map",
+    "static/js/2.20c49062.chunk.js.LICENSE.txt": "/react-ant-app/static/js/2.20c49062.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.76fd7994.js",
+    "static/css/2.9c8c8187.chunk.css",
+    "static/js/2.20c49062.chunk.js",
+    "static/css/main.62d4db45.chunk.css",
+    "static/js/main.7234bf10.chunk.js"
+  ]
+}
