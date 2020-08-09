@@ -1,6 +1,6 @@
 import React from 'react';
 import { useMedia } from 'react-media';
-import { Layout, Typography, Row, Space, Card } from 'antd';
+import { Layout, Typography, Card, Row, Col } from 'antd';
 
 const AboutComponent = () => {
   const GLOBAL_MEDIA_QUERIES = {
@@ -9,7 +9,7 @@ const AboutComponent = () => {
     large: '(min-width: 1200px)',
   };
   const matches = useMedia({ queries: GLOBAL_MEDIA_QUERIES });
-  const { Title, Paragraph } = Typography;
+  const { Title } = Typography;
   const { Content } = Layout;
   return (
     <React.Fragment>
@@ -17,30 +17,47 @@ const AboutComponent = () => {
         <Content
           style={{
             padding: matches.large ? '10px 50px' : '5px 30px',
-            display: 'flex',
-            flexDirection: matches.small ? 'column' : 'row',
-            justifyContent: 'space-around',
-            alignItems: 'center',
-            textAlign: 'center',
+            textAlign: 'left',
+            fontFamily: 'Source Sans Pro',
           }}>
-          <Card
-            title='Company Established'
-            style={{ width: '100%', margin: '10px' }}>
-            <p>Card content</p>
-          </Card>
-          <Card title='Staff Members' style={{ width: '100%', margin: '10px' }}>
-            <p>Card content</p>
-          </Card>
-          <Card
-            title='Offices Available'
-            style={{ width: '100%', margin: '10px' }}>
-            <p>Card content</p>
-          </Card>
-          <Card
-            title='Happy Clientele'
-            style={{ width: '100%', margin: '10px' }}>
-            <p>Card content</p>
-          </Card>
+          <Row gutter={16}>
+            <Col span={matches.small ? 24 : 6}>
+              <Card
+                title='Company Established'
+                style={{ width: '100%', marginTop: '14px' }}>
+                <Typography>
+                  <Title level={2}>2013</Title>
+                </Typography>
+              </Card>
+            </Col>
+            <Col span={matches.small ? 24 : 6}>
+              <Card
+                title='Staff Members'
+                style={{ width: '100%', marginTop: '14px' }}>
+                <Typography>
+                  <Title level={2}>80+</Title>
+                </Typography>
+              </Card>
+            </Col>
+            <Col span={matches.small ? 24 : 6}>
+              <Card
+                title='Offices Available'
+                style={{ width: '100%', marginTop: '14px' }}>
+                <Typography>
+                  <Title level={2}>06</Title>
+                </Typography>
+              </Card>
+            </Col>
+            <Col span={matches.small ? 24 : 6}>
+              <Card
+                title='Happy Clientele'
+                style={{ width: '100%', marginTop: '14px' }}>
+                <Typography>
+                  <Title level={2}>4500</Title>
+                </Typography>
+              </Card>
+            </Col>
+          </Row>
         </Content>
       </Layout>
     </React.Fragment>

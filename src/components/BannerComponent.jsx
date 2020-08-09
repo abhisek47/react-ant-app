@@ -38,6 +38,7 @@ const BannerComponent = () => {
                 width: matches.large ? '70%' : '100%',
                 margin: '0 auto',
                 fontSize: '16px',
+                fontFamily: 'Source Sans Pro',
               }}>
               we have over 8+ years of corporate and consulting experience with
               top firms. Our network includes experienced Chartered Accountants,
@@ -53,7 +54,11 @@ const BannerComponent = () => {
               <Button type='primary' size='large' style={{ margin: '0 14px' }}>
                 Get started
               </Button>
-              <Button type='primary' icon={<PhoneOutlined />} size='large' />
+              <Button
+                type='primary'
+                icon={<PhoneOutlined rotate={90} />}
+                size='large'
+              />
             </Row>
           </Typography>
         </Content>
