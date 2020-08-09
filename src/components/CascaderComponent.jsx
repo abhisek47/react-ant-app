@@ -1,0 +1,265 @@
+import React from 'react';
+import { Cascader } from 'antd';
+
+const CascaderComponent = () => {
+  const options = [
+    {
+      value: 'Company',
+      label: 'Company',
+      children: [
+        {
+          value: 'Popular Entities',
+          label: 'Popular Entities',
+          children: [
+            {
+              value: 'Company Registration',
+              label: 'Company Registration',
+            },
+            {
+              value: 'Proprietorship Firm Registration',
+              label: 'Proprietorship Firm Registration',
+            },
+            {
+              value: 'Unregistered Partnership',
+              label: 'Unregistered Partnership',
+            },
+            {
+              value: 'Registered Partnership',
+              label: 'Registered Partnership',
+            },
+            {
+              value: 'Limited Limited Proprietorship (LLP)',
+              label: 'Limited Limited Proprietorship (LLP)',
+            },
+          ],
+        },
+        {
+          value: 'Speacial Entities',
+          label: 'Speacial Entities',
+          children: [
+            {
+              value: 'Import Export Code',
+              label: 'Import Export Code',
+            },
+            {
+              value: 'ISO Registration',
+              label: 'ISO Registration',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      value: 'Property',
+      label: 'Property',
+      children: [
+        {
+          value: 'Trademark',
+          label: 'Trademark',
+          children: [
+            {
+              value: 'Trademark Registration',
+              label: 'Trademark Registration',
+            },
+            {
+              value: 'Trademark Objection',
+              label: 'Trademark Objection',
+            },
+            {
+              value: 'Trademark Renewal',
+              label: 'Trademark Renewal',
+            },
+          ],
+        },
+        {
+          value: 'Others',
+          label: 'Others',
+          children: [
+            {
+              value: 'Copyright Registration',
+              label: 'Copyright Registration',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      value: 'Tax-Filing',
+      label: 'Tax-Filing',
+      children: [
+        {
+          value: 'Goods & Services Tax',
+          label: 'Goods & Services Tax',
+          children: [
+            {
+              value: 'GST Registration',
+              label: 'GST Registration',
+            },
+            {
+              value: 'GST Return - 1',
+              label: 'GST Return - 1',
+            },
+            {
+              value: 'GST Return - 3B',
+              label: 'Zhong Hua GST Return - 3B',
+            },
+            {
+              value: 'GST Return - 4',
+              label: 'GST Return - 4',
+            },
+            {
+              value: 'GST Return - 9',
+              label: 'GST Return - 9',
+            },
+          ],
+        },
+        {
+          value: 'Income Tax Return',
+          label: 'Income Tax Return',
+          children: [
+            {
+              value: 'Income Tax Return-1',
+              label: 'Income Tax Return-1',
+            },
+            {
+              value: 'Income Tax Return-2',
+              label: 'Income Tax Return-2',
+            },
+            {
+              value: 'Income Tax Return-3',
+              label: 'Income Tax Return-3',
+            },
+            {
+              value: 'Income Tax Return-4',
+              label: 'Income Tax Return-4',
+            },
+            {
+              value: 'Income Tax Return-5',
+              label: 'Income Tax Return-5',
+            },
+            {
+              value: 'Income Tax Return-6',
+              label: 'Income Tax Return-6',
+            },
+            {
+              value: 'Income Tax Return-7',
+              label: 'Income Tax Return-7',
+            },
+          ],
+        },
+        {
+          value: 'Others',
+          label: 'Others',
+          children: [
+            {
+              value: 'TDS Return',
+              label: 'TDS Return',
+            },
+            {
+              value: 'Excise Return',
+              label: 'Excise Return',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      value: 'Compliances',
+      label: 'Compliances',
+      children: [
+        {
+          value: 'Annual Compliance',
+          label: 'Annual Compliance',
+          children: [
+            {
+              value: 'Private Limited Company',
+              label: 'Private Limited Company',
+            },
+            {
+              value: 'LLP Annual Compliances',
+              label: 'LLP Annual Compliances',
+            },
+            {
+              value: 'Partnership Firm, Society, NGO, Trust',
+              label: 'Partnership Firm, Society, NGO, Trust',
+            },
+          ],
+        },
+        {
+          value: 'Payroll Compliance',
+          label: 'Payroll Compliance',
+          children: [
+            {
+              value: 'PF Registration',
+              label: 'PF Registration',
+            },
+            {
+              value: 'PF Return Filing',
+              label: 'PF Return Filing',
+            },
+            {
+              value: 'ESI Registration',
+              label: 'ESI Registration',
+            },
+            {
+              value: 'ESI Return Registration',
+              label: 'ESI Return Registration',
+            },
+          ],
+        },
+        {
+          value: 'Others',
+          label: 'Others',
+          children: [
+            {
+              value: 'PAN Application',
+              label: 'PAN Application',
+            },
+            {
+              value: 'TAN Application',
+              label: 'TAN Application',
+            },
+            {
+              value: '80G Registration',
+              label: '80G Registration',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      value: 'Resources',
+      label: 'Resources',
+      children: [
+        {
+          value: 'Website Policies',
+          label: 'Website Policies',
+          children: [
+            {
+              value: 'Terms And Conditions',
+              label: 'Terms And Conditions',
+            },
+            {
+              value: 'Privacy Policy',
+              label: 'Privacy Policy',
+            },
+            {
+              value: 'Declimar Policy',
+              label: 'Declimar Policy',
+            },
+          ],
+        },
+      ],
+    },
+  ];
+  function onChange(value) {
+    console.log(value);
+  }
+  return (
+    <React.Fragment>
+      <Cascader options={options} onChange={onChange} placeholder='Services' />
+    </React.Fragment>
+  );
+};
+
+export default CascaderComponent;
