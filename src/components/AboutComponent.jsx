@@ -13,7 +13,9 @@ const AboutComponent = () => {
   const { Content } = Layout;
   return (
     <React.Fragment>
-      <Layout className='layout' style={{ background: '#fff' }}>
+      <Layout
+        className='layout'
+        style={{ background: '#fff', padding: '24px 0' }}>
         <Content
           style={{
             padding: matches.large ? '10px 50px' : '5px 30px',

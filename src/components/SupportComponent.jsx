@@ -18,7 +18,7 @@ const SupportComponent = () => {
   const { Content } = Layout;
   return (
     <React.Fragment>
-      <Layout className='layout' style={{ background: '#f0f5ff' }}>
+      <Layout className='layout' style={{ background: '#fff' }}>
         <Content
           style={{
             padding: matches.large ? '10px 50px' : '5px 30px',

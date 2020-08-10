@@ -5,6 +5,8 @@ import AboutComponent from '../components/AboutComponent';
 import PopularEntities from '../components/PopularEntities';
 import SupportComponent from '../components/SupportComponent';
 import QuotesComponents from '../components/QuotesComponents';
+import FooterComponent from '../components/FooterComponent';
+import CollapseComponent from '../components/CollapseComponent';
 
 const HomePage = () => {
   return (
@@ -13,8 +15,10 @@ const HomePage = () => {
       <BannerComponent />
       <AboutComponent />
       <PopularEntities />
-      <SupportComponent />
       <QuotesComponents />
+      <SupportComponent />
+      <CollapseComponent />
+      <FooterComponent />
     </div>
   );
 };

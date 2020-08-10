@@ -14,7 +14,7 @@ const QuotesComponents = () => {
   const { Content } = Layout;
   return (
     <React.Fragment>
-      <Layout className='layout' style={{ background: 'rgba(0,21,41,.9)' }}>
+      <Layout className='layout' style={{ background: '#f0f5ff' }}>
         <Content
           style={{
             padding: matches.large ? '10px 50px' : '5px 30px',
@@ -33,13 +33,12 @@ const QuotesComponents = () => {
               <Typography>
                 <Title
                   style={{
-                    color: '#fff',
                     fontFamily: 'Alegreya Sans',
-                    fontWeight: '400',
+                    fontWeight: '500',
                   }}>
                   PAN India Services
                 </Title>
-                <Paragraph style={{ color: '#fff' }}>
+                <Paragraph>
                   we have over 8+ years of corporate and consulting experience
                   with top firms. Our network includes experienced Chartered
                   Accountants, Company Secretaries, Lawyers, Cost Accountants
@@ -49,10 +48,10 @@ const QuotesComponents = () => {
                   help and assist client in legal compliances - “ give a-the
                   burden of compliance to us for ease of focusing on business ”
                 </Paragraph>
-                <Paragraph strong style={{ color: '#fff', marginTop: '32px' }}>
+                <Paragraph strong style={{ marginTop: '32px' }}>
                   Uday Choudhary
                 </Paragraph>
-                <Text style={{ color: '#fff' }}>CEO of Clientfilingindia</Text>
+                <Text>CEO of Clientfilingindia</Text>
               </Typography>
             </Col>
             <Col span={matches.small ? 24 : 7}>

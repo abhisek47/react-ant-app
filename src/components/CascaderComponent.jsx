@@ -14,6 +14,7 @@ const CascaderComponent = () => {
             {
               value: 'Company Registration',
               label: 'Company Registration',
+              link: '/company-registration',
             },
             {
               value: 'Proprietorship Firm Registration',
@@ -252,8 +253,10 @@ const CascaderComponent = () => {
       ],
     },
   ];
-  function onChange(value) {
-    console.log(value);
+  function onChange(value, link) {
+    // console.log(value);
+    const loc = (window.location.pathname = link[2].link);
+    console.log(loc);
   }
   return (
     <React.Fragment>
@@ -263,3 +266,43 @@ const CascaderComponent = () => {
 };
 
 export default CascaderComponent;
+
+// ------------------------------------------------------------ //
+
+// const CascaderComponent = () => {
+//   const { SubMenu } = Menu;
+//   const menu = (
+//     <Menu>
+//       {options.map((option) => (
+//         <Menu.ItemGroup key={option.label}>
+//           <SubMenu title={option.value}>
+//             {option.children.map((child) => (
+//               <SubMenu key={child.label} title={child.value}>
+//                 {child.children.map((subChild) => (
+//                   <Menu.Item key={subChild.label}>{subChild.value}</Menu.Item>
+//                 ))}
+//               </SubMenu>
+//             ))}
+//           </SubMenu>
+//         </Menu.ItemGroup>
+//       ))}
+//     </Menu>
+//   );
+//   return (
+//     <React.Fragment>
+//       <Dropdown overlay={menu}>
+//         <a
+//           style={{
+//             fontWeight: '600',
+//             fontSize: '16px',
+//             padding: '0 14px',
+//             color: '#fff',
+//             fontFamily: 'Source Sans Pro',
+//           }}
+//           onClick={(e) => e.preventDefault()}>
+//           Sevices <DownOutlined style={{ margin: '0 12px' }} />
+//         </a>
+//       </Dropdown>
+//     </React.Fragment>
+//   );
+// };
