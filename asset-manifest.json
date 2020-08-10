@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/react-ant-app/static/css/main.8fd3b4fc.chunk.css",
-    "main.js": "/react-ant-app/static/js/main.d561d323.chunk.js",
-    "main.js.map": "/react-ant-app/static/js/main.d561d323.chunk.js.map",
+    "main.css": "/react-ant-app/static/css/main.44d05dd8.chunk.css",
+    "main.js": "/react-ant-app/static/js/main.03b22e5b.chunk.js",
+    "main.js.map": "/react-ant-app/static/js/main.03b22e5b.chunk.js.map",
     "runtime-main.js": "/react-ant-app/static/js/runtime-main.76fd7994.js",
     "runtime-main.js.map": "/react-ant-app/static/js/runtime-main.76fd7994.js.map",
     "static/css/2.9c8c8187.chunk.css": "/react-ant-app/static/css/2.9c8c8187.chunk.css",
-    "static/js/2.16a0750b.chunk.js": "/react-ant-app/static/js/2.16a0750b.chunk.js",
-    "static/js/2.16a0750b.chunk.js.map": "/react-ant-app/static/js/2.16a0750b.chunk.js.map",
+    "static/js/2.40dbdc57.chunk.js": "/react-ant-app/static/js/2.40dbdc57.chunk.js",
+    "static/js/2.40dbdc57.chunk.js.map": "/react-ant-app/static/js/2.40dbdc57.chunk.js.map",
     "index.html": "/react-ant-app/index.html",
-    "precache-manifest.388e2f0f96f8872006410a2b97151d72.js": "/react-ant-app/precache-manifest.388e2f0f96f8872006410a2b97151d72.js",
+    "precache-manifest.1a3d4c7d06166bceff1a6d0bef1d0901.js": "/react-ant-app/precache-manifest.1a3d4c7d06166bceff1a6d0bef1d0901.js",
     "service-worker.js": "/react-ant-app/service-worker.js",
     "static/css/2.9c8c8187.chunk.css.map": "/react-ant-app/static/css/2.9c8c8187.chunk.css.map",
-    "static/css/main.8fd3b4fc.chunk.css.map": "/react-ant-app/static/css/main.8fd3b4fc.chunk.css.map",
-    "static/js/2.16a0750b.chunk.js.LICENSE.txt": "/react-ant-app/static/js/2.16a0750b.chunk.js.LICENSE.txt",
+    "static/css/main.44d05dd8.chunk.css.map": "/react-ant-app/static/css/main.44d05dd8.chunk.css.map",
+    "static/js/2.40dbdc57.chunk.js.LICENSE.txt": "/react-ant-app/static/js/2.40dbdc57.chunk.js.LICENSE.txt",
+    "static/media/banner2.jpg": "/react-ant-app/static/media/banner2.926a2675.jpg",
     "static/media/chief@2x.png": "/react-ant-app/static/media/chief@2x.85e51324.png"
   },
   "entrypoints": [
     "static/js/runtime-main.76fd7994.js",
     "static/css/2.9c8c8187.chunk.css",
-    "static/js/2.16a0750b.chunk.js",
-    "static/css/main.8fd3b4fc.chunk.css",
-    "static/js/main.d561d323.chunk.js"
+    "static/js/2.40dbdc57.chunk.js",
+    "static/css/main.44d05dd8.chunk.css",
+    "static/js/main.03b22e5b.chunk.js"
   ]
 }
