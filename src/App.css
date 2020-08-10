@@ -20,7 +20,14 @@
   min-width: 150px;
 }
 .ant-cascader-input.ant-input {
-  width: 250px;
+  width: 100%;
+}
+.ant-cascader-picker-label {
+  color: #111;
+}
+.ant-input {
+  border: none;
+  color: #111;
 }
 
 .site-drawer-render-in-current-wrapper {

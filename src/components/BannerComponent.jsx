@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout, Typography, Button, Row } from 'antd';
 import { PhoneOutlined } from '@ant-design/icons';
 import { useMedia } from 'react-media';
+import BannerBg from '../assets/banner2.jpg';
 
 const BannerComponent = () => {
   const GLOBAL_MEDIA_QUERIES = {
@@ -23,7 +24,11 @@ const BannerComponent = () => {
     textAlign: 'center',
   };
   const svgPattern = {
-    backgroundColor: '#f0f5ff',
+    // backgroundColor: '#f0f5ff',
+    width: '100%',
+    backgroundSize: 'cover',
+    backgroundImage: `url(${BannerBg})`,
+    backgroundPosition: 'center center',
   };
 
   return (
