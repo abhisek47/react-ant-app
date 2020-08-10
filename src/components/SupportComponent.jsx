@@ -36,7 +36,7 @@ const SupportComponent = () => {
                 }}>
                 <HeartFilled
                   style={{
-                    fontSize: '48px',
+                    fontSize: '36px',
                     color: '#eb2f96',
                     marginBottom: '18px',
                   }}
@@ -59,7 +59,7 @@ const SupportComponent = () => {
                 }}>
                 <MessageFilled
                   style={{
-                    fontSize: '48px',
+                    fontSize: '36px',
                     color: '#1890ff',
                     marginBottom: '18px',
                   }}
@@ -82,7 +82,7 @@ const SupportComponent = () => {
                 }}>
                 <SafetyCertificateFilled
                   style={{
-                    fontSize: '48px',
+                    fontSize: '36px',
                     color: '#52c41a',
                     marginBottom: '18px',
                   }}
