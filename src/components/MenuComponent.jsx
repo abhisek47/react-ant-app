@@ -12,7 +12,7 @@ const { SubMenu } = Menu;
 
 class MenuComponent extends React.Component {
   // submenu keys of first level
-  rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
+  rootSubmenuKeys = ['sub1', 'sub2', 'sub3', 'sub4', 'sub5'];
 
   state = {
     openKeys: ['sub1'],
@@ -60,7 +60,7 @@ class MenuComponent extends React.Component {
           <Menu.Item key='10'>Trademark Renewal</Menu.Item>
           <Menu.Item key='11'>Copyright Registration</Menu.Item>
         </SubMenu>
-        <SubMenu key='sub4' icon={<SettingOutlined />} title='Tax-Filing'>
+        <SubMenu key='sub3' icon={<SettingOutlined />} title='Tax-Filing'>
           <Menu.Item key='12'>GST Registration</Menu.Item>
           <Menu.Item key='13'>GST Return - 1</Menu.Item>
           <Menu.Item key='14'>GST Return - 3B</Menu.Item>
@@ -76,7 +76,7 @@ class MenuComponent extends React.Component {
           <Menu.Item key='24'>TDS Return</Menu.Item>
           <Menu.Item key='25'>Excise Return</Menu.Item>
         </SubMenu>
-        <SubMenu key='sub5' icon={<DatabaseOutlined />} title='Compliances'>
+        <SubMenu key='sub4' icon={<DatabaseOutlined />} title='Compliances'>
           <Menu.Item key='26'>Private Limited Company</Menu.Item>
           <Menu.Item key='27'>LLP Annual Compliances</Menu.Item>
           <Menu.Item key='29'>PF Registration</Menu.Item>
@@ -87,7 +87,7 @@ class MenuComponent extends React.Component {
           <Menu.Item key='34'>TAN Application</Menu.Item>
           <Menu.Item key='35'>80G Registration</Menu.Item>
         </SubMenu>
-        <SubMenu key='sub6' icon={<AppstoreAddOutlined />} title='Resources'>
+        <SubMenu key='sub5' icon={<AppstoreAddOutlined />} title='Resources'>
           <Menu.Item key='36'>Terms And Conditions</Menu.Item>
           <Menu.Item key='37'>Privacy Policy</Menu.Item>
           <Menu.Item key='38'>Declimar Policy</Menu.Item>

@@ -17,7 +17,7 @@ const AboutComponent = () => {
         <Content
           style={{
             padding: matches.large ? '10px 50px' : '5px 30px',
-            textAlign: 'left',
+            textAlign: matches.large ? 'left' : 'center',
             fontFamily: 'Source Sans Pro',
           }}>
           <Row gutter={16}>

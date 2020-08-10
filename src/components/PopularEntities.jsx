@@ -51,7 +51,6 @@ const PopularEntities = () => {
               level={2}
               style={{
                 fontWeight: '500',
-                margin: '24px 10px',
                 textAlign: 'left',
                 fontFamily: 'Alegreya Sans',
               }}>

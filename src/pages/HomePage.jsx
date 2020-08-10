@@ -4,6 +4,7 @@ import BannerComponent from '../components/BannerComponent';
 import AboutComponent from '../components/AboutComponent';
 import PopularEntities from '../components/PopularEntities';
 import SupportComponent from '../components/SupportComponent';
+import QuotesComponents from '../components/QuotesComponents';
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <AboutComponent />
       <PopularEntities />
       <SupportComponent />
+      <QuotesComponents />
     </div>
   );
 };
