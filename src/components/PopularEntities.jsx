@@ -17,10 +17,23 @@ const PopularEntities = () => {
     medium: '(min-width: 768px) and (max-width: 1199px)',
     large: '(min-width: 1200px)',
   };
-  const data = [
-    'GSTR 1 and GSTR 3B / Rs. 820+18%',
-    'GST9/ Rs. 2500+18%',
-    'GST4A/ Rs. 2000+18%',
+  const gst = [
+    'GST registration/ Rs. 1000+18%',
+    'GSTR 1 and GSTR 3B return filing / Rs. 820+18%',
+    'GST9 return filing/ Rs. 2500+18%',
+    'GST4A return filing/ Rs. 2000+18%',
+  ];
+  const incomeTax = [
+    'Income tax return - 1/ Rs. 700+18%',
+    'Income tax return - 2/ Rs. 2456+18%',
+    'Income tax return - 3/ Rs. 3300+18%',
+    'Income tax return - 4/ Rs. 2540+18%',
+  ];
+  const comapny = [
+    'Company registration/ Rs. 10000+18%',
+    'Proprietorship firm registration/ Rs. 4000+18%',
+    'Registered partnership/ Rs. 9000+18%',
+    'LLP registration/ Rs. 10000+18%',
   ];
   const matches = useMedia({ queries: GLOBAL_MEDIA_QUERIES });
   const { Title, Paragraph } = Typography;
@@ -59,7 +72,7 @@ const PopularEntities = () => {
                 <List
                   size='small'
                   bordered
-                  dataSource={data}
+                  dataSource={gst}
                   renderItem={(item) => <List.Item>{item}</List.Item>}
                 />
                 <Button
@@ -83,7 +96,7 @@ const PopularEntities = () => {
                 <List
                   size='small'
                   bordered
-                  dataSource={data}
+                  dataSource={comapny}
                   renderItem={(item) => <List.Item>{item}</List.Item>}
                 />
                 <Button
@@ -107,7 +120,7 @@ const PopularEntities = () => {
                 <List
                   size='small'
                   bordered
-                  dataSource={data}
+                  dataSource={incomeTax}
                   renderItem={(item) => <List.Item>{item}</List.Item>}
                 />
                 <Button
