@@ -55,11 +55,13 @@ const BannerComponent = () => {
               <Button type='primary' size='large' style={{ margin: '0 14px' }}>
                 Get started
               </Button>
-              <Button
-                type='primary'
-                icon={<PhoneOutlined rotate={90} />}
-                size='large'
-              />
+              <a href='tel:+91-983-294-9193'>
+                <Button
+                  type='primary'
+                  icon={<PhoneOutlined rotate={90} />}
+                  size='large'
+                />
+              </a>
             </Row>
           </Typography>
         </Content>

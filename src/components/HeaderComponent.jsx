@@ -3,6 +3,7 @@ import { Layout, Menu, Button } from 'antd';
 import CascaderComponent from './CascaderComponent';
 import DrawerComponent from './DrawerComponent';
 import { useMedia } from 'react-media';
+import { Link } from 'react-router-dom';
 
 const HeaderComponent = () => {
   const GLOBAL_MEDIA_QUERIES = {
@@ -21,7 +22,9 @@ const HeaderComponent = () => {
             width: '100%',
             padding: matches.large ? '0 50px' : '0 30px',
           }}>
-          <div className='logo' />
+          <Link to='/'>
+            <div className='logo' />
+          </Link>
           <Menu theme='dark' mode='horizontal' defaultSelectedKeys={['1']}>
             {matches.large && (
               <>

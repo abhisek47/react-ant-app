@@ -1,5 +1,6 @@
 import React from 'react';
 import { Cascader } from 'antd';
+import { Redirect } from 'react-router-dom';
 
 const CascaderComponent = () => {
   const options = [
@@ -14,7 +15,7 @@ const CascaderComponent = () => {
             {
               value: 'Company Registration',
               label: 'Company Registration',
-              link: '/company-registration',
+              link: '/company',
             },
             {
               value: 'Proprietorship Firm Registration',
@@ -95,6 +96,7 @@ const CascaderComponent = () => {
             {
               value: 'GST Registration',
               label: 'GST Registration',
+              link: '#/gst',
             },
             {
               value: 'GST Return - 1',
@@ -102,7 +104,7 @@ const CascaderComponent = () => {
             },
             {
               value: 'GST Return - 3B',
-              label: 'Zhong Hua GST Return - 3B',
+              label: 'GST Return - 3B',
             },
             {
               value: 'GST Return - 4',
@@ -254,9 +256,10 @@ const CascaderComponent = () => {
     },
   ];
   function onChange(value, link) {
-    // console.log(value);
-    const loc = (window.location.pathname = link[2].link);
-    console.log(loc);
+    console.log(value);
+    const page = (window.location.href = link[2].link);
+    console.log(page);
+    return <Redirect to={page} />;
   }
   return (
     <React.Fragment>

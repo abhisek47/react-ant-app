@@ -10,6 +10,7 @@ import {
   List,
 } from 'antd';
 import { useMedia } from 'react-media';
+import { Link } from 'react-router-dom';
 
 const PopularEntities = () => {
   const GLOBAL_MEDIA_QUERIES = {
@@ -74,12 +75,14 @@ const PopularEntities = () => {
                   dataSource={gst}
                   renderItem={(item) => <List.Item>{item}</List.Item>}
                 />
-                <Button
-                  type='primary'
-                  size='middle'
-                  style={{ marginTop: '24px' }}>
-                  Get Started
-                </Button>
+                <Link to='/gst'>
+                  <Button
+                    type='primary'
+                    size='middle'
+                    style={{ marginTop: '24px' }}>
+                    Get Started
+                  </Button>
+                </Link>
               </Card>
             </Col>
             <Col span={matches.small ? 24 : 8}>
