@@ -46,6 +46,8 @@ const PopularEntities = () => {
           style={{
             padding: matches.large ? '10px 50px' : '5px 30px',
             fontFamily: 'Source Sans Pro',
+            width: matches.large ? '80%' : '100%',
+            margin: '0 auto',
           }}>
           <Typography>
             <Title

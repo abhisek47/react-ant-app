@@ -199,6 +199,7 @@ const CascaderComponent = () => {
             {
               value: 'PF Registration',
               label: 'PF Registration',
+              link: '#/provident-fund',
             },
             {
               value: 'PF Return Filing',

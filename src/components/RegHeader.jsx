@@ -12,6 +12,7 @@ const RegHeader = ({ title, paraOne, paraTwo, tagline }) => {
   const heading = {
     fontWeight: '500',
     textAlign: 'left',
+    paddingTop: '24px',
     fontFamily: 'Alegreya Sans',
   };
   const subHading = {

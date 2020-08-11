@@ -18,9 +18,9 @@ const QuotesComponents = () => {
         <Content
           style={{
             padding: matches.large ? '10px 50px' : '5px 30px',
-            textAlign: matches.small ? 'center' : 'left',
-            margin: '18px 0',
+            margin: '18px auto',
             fontFamily: 'Source Sans Pro',
+            width: matches.large ? '80%' : '100%',
           }}>
           <Row
             gutter={16}
@@ -58,7 +58,7 @@ const QuotesComponents = () => {
               <img
                 src={director}
                 alt=''
-                style={{ width: matches.large ? '85%' : '95%' }}
+                style={{ width: matches.large ? '95%' : '95%' }}
               />
             </Col>
           </Row>

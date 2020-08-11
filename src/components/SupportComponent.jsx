@@ -22,9 +22,9 @@ const SupportComponent = () => {
         <Content
           style={{
             padding: matches.large ? '10px 50px' : '5px 30px',
-            textAlign: matches.small ? 'center' : 'left',
-            margin: '18px 0',
+            margin: '18px auto',
             fontFamily: 'Source Sans Pro',
+            width: matches.large ? '80%' : '100%',
           }}>
           <Row gutter={16}>
             <Col span={matches.small ? 24 : 8}>

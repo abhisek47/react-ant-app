@@ -15,6 +15,11 @@ import { Link } from 'react-router-dom';
 import RegHeader from './RegHeader';
 import PricingComponent from './PricingComponent';
 import TableComponent from './TableComponent';
+import {
+  gstReturnBasic,
+  gstReturnStandard,
+  gstReturnPremium,
+} from './PricingDetails';
 
 const GstReturnComponent = () => {
   const columns = [
@@ -156,6 +161,8 @@ const GstReturnComponent = () => {
             padding: matches.large ? '10px 50px' : '5px 30px',
             textAlign: 'left',
             fontFamily: 'Source Sans Pro',
+            width: matches.large ? '80%' : '100%',
+            margin: '0 auto',
           }}>
           <Breadcrumb style={{ marginBottom: '12px' }}>
             <Breadcrumb.Item>
@@ -170,7 +177,14 @@ const GstReturnComponent = () => {
               paraTwo='Under GST, a registered dealer has to file GST returns that include: Purchases, Sales, Output GST (On sales), Input tax credit (GST paid on purchases) To file GST returns, GST compliant sales and purchase invoices are required. You can generate GST compliant invoices for free on ClientFiling.'
               tagline='Get your Return Filing under GST @₹ 1,800 Only'
             />
-            <PricingComponent />
+            <PricingComponent
+              basic={gstReturnBasic}
+              standard={gstReturnStandard}
+              premium={gstReturnPremium}
+              basicPrice='2899'
+              standardPrice='4899'
+              premiumPrice='6899'
+            />
             <Row>
               <Col span={24}>
                 <TableComponent

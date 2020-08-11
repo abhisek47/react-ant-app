@@ -1,13 +1,31 @@
 import React from 'react';
 import { useMedia } from 'react-media';
-import { Layout, Typography, Row, Col, Space, Breadcrumb } from 'antd';
+import {
+  Layout,
+  Typography,
+  Row,
+  Col,
+  Space,
+  Breadcrumb,
+  Timeline,
+} from 'antd';
 import { CheckCircleFilled } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import RegHeader from './RegHeader';
-import DocumentComponent from './DocumentComponent';
 import TableComponent from './TableComponent';
 
 const GstComponent = () => {
+  const GstDocument = [
+    { id: 1, case: 'PAN card and document scan copy' },
+    { id: 2, case: 'Tradelicence, incorporation deed, partnership deed' },
+    {
+      id: 3,
+      case:
+        'Adress proof like electric bill, telephone bil, rent Agreement, property document etc',
+    },
+    { id: 4, case: 'Others like-noc, authorisation letter, bank statement' },
+  ];
+
   const columns = [
     {
       title: 'Type of GST Offencee',
@@ -108,6 +126,8 @@ const GstComponent = () => {
             padding: matches.large ? '10px 50px' : '5px 30px',
             textAlign: 'left',
             fontFamily: 'Source Sans Pro',
+            width: matches.large ? '80%' : '100%',
+            margin: '0 auto',
           }}>
           <Breadcrumb style={{ marginBottom: '12px' }}>
             <Breadcrumb.Item>
@@ -141,7 +161,6 @@ const GstComponent = () => {
                     <Space align='baseline' key={cases.id}>
                       <CheckCircleFilled
                         style={{
-                          marginRight: '16px',
                           color: '#52c41a',
                         }}
                       />
@@ -155,10 +174,31 @@ const GstComponent = () => {
                 </Space>
               </Col>
               <Col span={matches.small ? 24 : 12}>
-                <DocumentComponent
-                  title='Documents Required for GST Registration.'
-                  subtitle='In below required documents is mandatory .'
-                />
+                <Space direction='vertical' style={{ marginTop: '24px' }}>
+                  <Title style={heading} level={2}>
+                    Documents Required for GST Registration
+                  </Title>
+                  <Paragraph strong style={matches.large ? subHading : ''}>
+                    In below all the documents is required
+                  </Paragraph>
+                  <Row>
+                    <Timeline
+                      style={{ display: 'flex', flexDirection: 'column' }}>
+                      {GstDocument.map((cases) => (
+                        <Space align='baseline' key={cases.id}>
+                          <Timeline.Item
+                            style={{ padding: ' 5px 0', margin: '0' }}>
+                            <Paragraph
+                              level={4}
+                              style={matches.large ? subHading : ''}>
+                              {cases.case}
+                            </Paragraph>
+                          </Timeline.Item>
+                        </Space>
+                      ))}
+                    </Timeline>
+                  </Row>
+                </Space>
               </Col>
             </Row>
             <TableComponent

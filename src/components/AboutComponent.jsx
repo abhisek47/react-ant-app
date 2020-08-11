@@ -21,6 +21,8 @@ const AboutComponent = () => {
             padding: matches.large ? '10px 50px' : '5px 30px',
             textAlign: matches.large ? 'left' : 'center',
             fontFamily: 'Source Sans Pro',
+            width: matches.large ? '80%' : '100%',
+            margin: '0 auto',
           }}>
           <Row gutter={16}>
             <Col span={matches.small ? 24 : 6}>

@@ -3,37 +3,14 @@ import { Layout, Typography, Card, Row, Col, Button, List } from 'antd';
 import { useMedia } from 'react-media';
 import { Link } from 'react-router-dom';
 
-const PricingComponent = () => {
-  const basic = [
-    '3 months GST return filing',
-    'Unlimited Invoices',
-    'Unlimited Purchase Invoices',
-    'Sales invoices',
-    'ITR reconciliation,filing',
-    'Filing of gst1 and gstr3b',
-    'Importing data of any softwares',
-    'Cloud backup for 10 years',
-  ];
-  const standard = [
-    '6 month GST return filing',
-    'Unlimited Invoices',
-    'Unlimited Purchase Invoices',
-    'Sales invoices',
-    'ITR reconciliation,filing',
-    'Filing of gst1 and gstr3b',
-    'Importing data of any softwares',
-    'Cloud backup for 10 years',
-  ];
-  const premium = [
-    '12 month GST return filing',
-    'Unlimited Invoices',
-    'Unlimited Purchase Invoices',
-    'Sales invoices',
-    'ITR reconciliation,filing',
-    'Filing of gst1 and gstr3b',
-    'Importing data of any softwares',
-    'Cloud backup for 10 years',
-  ];
+const PricingComponent = ({
+  basic,
+  standard,
+  premium,
+  basicPrice,
+  standardPrice,
+  premiumPrice,
+}) => {
   const GLOBAL_MEDIA_QUERIES = {
     small: '(max-width: 767px)',
     medium: '(min-width: 768px) and (max-width: 1199px)',
@@ -50,7 +27,7 @@ const PricingComponent = () => {
             <Card
               style={{ marginTop: '16px' }}
               title={<Title level={4}>Basic</Title>}
-              extra={<Title level={3}> &#x20b9; 2899</Title>}>
+              extra={<Title level={3}> &#x20b9; {basicPrice}</Title>}>
               <List
                 size='small'
                 bordered
@@ -71,7 +48,7 @@ const PricingComponent = () => {
             <Card
               style={{ marginTop: '16px' }}
               title={<Title level={4}>Standard</Title>}
-              extra={<Title level={3}> &#x20b9; 4899</Title>}>
+              extra={<Title level={3}> &#x20b9; {standardPrice}</Title>}>
               <List
                 size='small'
                 bordered
@@ -92,7 +69,7 @@ const PricingComponent = () => {
             <Card
               style={{ marginTop: '16px' }}
               title={<Title level={4}>Premium</Title>}
-              extra={<Title level={3}> &#x20b9; 6899</Title>}>
+              extra={<Title level={3}> &#x20b9; {premiumPrice}</Title>}>
               <List
                 size='small'
                 bordered

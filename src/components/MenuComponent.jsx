@@ -92,7 +92,9 @@ class MenuComponent extends React.Component {
         <SubMenu key='sub4' icon={<DatabaseOutlined />} title='Compliances'>
           <Menu.Item key='26'>Private Limited Company</Menu.Item>
           <Menu.Item key='27'>LLP Annual Compliances</Menu.Item>
-          <Menu.Item key='29'>PF Registration</Menu.Item>
+          <Menu.Item key='29'>
+            <Link to='/provident-fund'>PF Registration</Link>
+          </Menu.Item>
           <Menu.Item key='30'>PF Return Registration</Menu.Item>
           <Menu.Item key='31'>ESI Registration</Menu.Item>
           <Menu.Item key='32'>ESI Return Registration</Menu.Item>

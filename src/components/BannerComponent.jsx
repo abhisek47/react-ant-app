@@ -30,13 +30,17 @@ const BannerComponent = () => {
   return (
     <React.Fragment>
       <Layout className='layout' style={svgPattern}>
-        <Content style={{ padding: matches.large ? '10px 50px' : '5px 30px' }}>
+        <Content
+          style={{
+            padding: matches.large ? '10px 50px' : '5px 30px',
+            width: matches.large ? '80%' : '100%',
+            margin: '0 auto',
+          }}>
           <Typography style={contentStyle}>
             <Title>We Are Helping Startup To Grow Their Business</Title>
             <Paragraph
               strong
               style={{
-                width: matches.large ? '70%' : '100%',
                 margin: '0 auto',
                 fontSize: '16px',
                 fontFamily: 'Source Sans Pro',
