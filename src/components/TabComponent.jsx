@@ -1,16 +1,12 @@
 import React from 'react';
 import Media from 'react-media';
 import { Layout, Tabs } from 'antd';
-import GstReg from './GstReg';
 
 const { Content } = Layout;
 const { TabPane } = Tabs;
 const item = [
   { id: 1, head: 'GST Registration', component: <GstReg /> },
-  { id: 2, head: 'GST Return - 1' },
-  { id: 3, head: 'GST Return - 3B' },
-  { id: 4, head: 'GST Return - 4' },
-  { id: 5, head: 'GST Return - 9' },
+  { id: 2, head: 'GST Return Filing', component: <GstReturn /> },
 ];
 
 class TabComponent extends React.Component {
@@ -45,7 +41,7 @@ class TabComponent extends React.Component {
                 <div>
                   <Tabs
                     defaultActiveKey='1'
-                    tabPosition={matches.small ? 'top' : 'left'}
+                    tabPosition={matches.large ? 'left' : 'top'}
                     style={{ height: '100%' }}>
                     {item.map((items) => (
                       <TabPane

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import HeaderComponent from '../components/HeaderComponent';
-import GstComponent from '../components/GstComponent';
+import GstReturnComponent from '../components/GetReturnComponent';
 import FooterComponent from '../components/FooterComponent';
+import HeaderComponent from '../components/HeaderComponent';
 import CollapseComponent from '../components/CollapseComponent';
 
-export class GstPage extends Component {
+export class GstReturnPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -12,12 +12,12 @@ export class GstPage extends Component {
     return (
       <React.Fragment>
         <HeaderComponent />
-        <GstComponent />
-        <CollapseComponent heading='Questions Related GST Registration' />
+        <GstReturnComponent />
+        <CollapseComponent heading='Questions Related GST Return Filing' />
         <FooterComponent />
       </React.Fragment>
     );
   }
 }
 
-export default GstPage;
+export default GstReturnPage;

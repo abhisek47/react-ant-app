@@ -37,7 +37,7 @@ const PopularEntities = () => {
     'LLP registration/ Rs. 10000+18%',
   ];
   const matches = useMedia({ queries: GLOBAL_MEDIA_QUERIES });
-  const { Title, Paragraph } = Typography;
+  const { Title } = Typography;
   const { Content } = Layout;
   return (
     <React.Fragment>
@@ -63,10 +63,6 @@ const PopularEntities = () => {
               <Card style={{ width: '100%', marginTop: '16px' }}>
                 <Typography>
                   <Title level={4}>GST Registration</Title>
-                  <Paragraph>
-                    Goods and Services Tax is an indirect tax used in India on
-                    the supply of goods and services. It is a comprehensive.
-                  </Paragraph>
                 </Typography>
                 <Divider orientation='left'>Speacial Entities</Divider>
                 <List
@@ -89,10 +85,6 @@ const PopularEntities = () => {
               <Card style={{ width: '100%', marginTop: '16px' }}>
                 <Typography>
                   <Title level={4}>Company Registration</Title>
-                  <Paragraph>
-                    A company register is a register of organizations in the
-                    jurisdiction they operate under.
-                  </Paragraph>
                 </Typography>
                 <Divider orientation='left'>Speacial Entities</Divider>
                 <List
@@ -113,10 +105,6 @@ const PopularEntities = () => {
               <Card style={{ width: '100%', marginTop: '16px' }}>
                 <Typography>
                   <Title level={4}>Income Tax Return</Title>
-                  <Paragraph>
-                    Income Tax Return is the form in which assessee files
-                    information about his Income and tax.
-                  </Paragraph>
                 </Typography>
                 <Divider orientation='left'>Speacial Entities</Divider>
                 <List

@@ -7,6 +7,7 @@ import {
   DatabaseOutlined,
   AppstoreAddOutlined,
 } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const { SubMenu } = Menu;
 
@@ -46,7 +47,9 @@ class MenuComponent extends React.Component {
               <span>Company</span>
             </span>
           }>
-          <Menu.Item key='1'>Company Registration</Menu.Item>
+          <Menu.Item key='1'>
+            <Link to='/'>Company Registration</Link>
+          </Menu.Item>
           <Menu.Item key='2'>Proprietorship Firm Registration</Menu.Item>
           <Menu.Item key='3'>Unregistered Partnership</Menu.Item>
           <Menu.Item key='4'>Registered Partnership</Menu.Item>
@@ -61,11 +64,21 @@ class MenuComponent extends React.Component {
           <Menu.Item key='11'>Copyright Registration</Menu.Item>
         </SubMenu>
         <SubMenu key='sub3' icon={<SettingOutlined />} title='Tax-Filing'>
-          <Menu.Item key='12'>GST Registration</Menu.Item>
-          <Menu.Item key='13'>GST Return - 1</Menu.Item>
-          <Menu.Item key='14'>GST Return - 3B</Menu.Item>
-          <Menu.Item key='15'>GST Return - 4</Menu.Item>
-          <Menu.Item key='16'>GST Return - 9</Menu.Item>
+          <Menu.Item key='12'>
+            <Link to='/gst'>GST Registration</Link>
+          </Menu.Item>
+          <Menu.Item key='13'>
+            <Link to='/gst-return'>GST Return - 1</Link>
+          </Menu.Item>
+          <Menu.Item key='14'>
+            <Link to='/gst-return'>GST Return - 3B</Link>
+          </Menu.Item>
+          <Menu.Item key='15'>
+            <Link to='/gst-return'>GST Return - 4</Link>
+          </Menu.Item>
+          <Menu.Item key='16'>
+            <Link to='/gst-return'>GST Return - 9</Link>
+          </Menu.Item>
           <Menu.Item key='17'>Income Tax Return - 1</Menu.Item>
           <Menu.Item key='18'>Income Tax Return - 2</Menu.Item>
           <Menu.Item key='19'>Income Tax Return - 3</Menu.Item>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, Input, Button, Card, Typography, Space } from 'antd';
 import { MailOutlined, PhoneOutlined } from '@ant-design/icons';
 
-const FormComponent = () => {
+const FormComponent = ({ tagline }) => {
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
   };
@@ -11,9 +11,7 @@ const FormComponent = () => {
     <React.Fragment>
       <Card style={{ fontFamily: 'Source Sans Pro' }}>
         <Typography>
-          <Title level={3}>
-            Get your Business Registered under GST @₹ 1,800 Only
-          </Title>
+          <Title level={3}>{tagline}</Title>
         </Typography>
         <Form
           name='normal_login'
@@ -48,6 +46,7 @@ const FormComponent = () => {
               <Button
                 type='primary'
                 htmlType='submit'
+                size='middle'
                 className='login-form-button'>
                 Buy now
               </Button>

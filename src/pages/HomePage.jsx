@@ -7,21 +7,7 @@ import SupportComponent from '../components/SupportComponent';
 import QuotesComponents from '../components/QuotesComponents';
 import FooterComponent from '../components/FooterComponent';
 import CollapseComponent from '../components/CollapseComponent';
-// import { BackTop } from 'antd';
 
-// const style = {
-//   height: 40,
-//   width: 40,
-//   lineHeight: '40px',
-//   borderRadius: 4,
-//   backgroundColor: '#1088e9',
-//   color: '#fff',
-//   position: 'relative',
-//   right: '2px',
-//   bottom: '50px',
-//   textAlign: 'center',
-//   fontSize: 14,
-// };
 class HomePage extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0);
@@ -35,11 +21,8 @@ class HomePage extends React.Component {
         <PopularEntities />
         <QuotesComponents />
         <SupportComponent />
-        <CollapseComponent />
+        <CollapseComponent heading='Frequently Asked Questions' />
         <FooterComponent />
-        {/* <BackTop>
-          <div style={style}>UP</div>
-        </BackTop> */}
       </div>
     );
   }

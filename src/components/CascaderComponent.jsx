@@ -101,18 +101,22 @@ const CascaderComponent = () => {
             {
               value: 'GST Return - 1',
               label: 'GST Return - 1',
+              link: '#/gst-return',
             },
             {
               value: 'GST Return - 3B',
               label: 'GST Return - 3B',
+              link: '#/gst-return',
             },
             {
               value: 'GST Return - 4',
               label: 'GST Return - 4',
+              link: '#/gst-return',
             },
             {
               value: 'GST Return - 9',
               label: 'GST Return - 9',
+              link: '#/gst-return',
             },
           ],
         },

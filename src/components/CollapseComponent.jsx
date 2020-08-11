@@ -3,7 +3,7 @@ import { Layout, Row, Col, Typography, Collapse } from 'antd';
 import { useMedia } from 'react-media';
 import { CaretRightOutlined } from '@ant-design/icons';
 
-const CollapseComponent = () => {
+const CollapseComponent = ({ heading }) => {
   const GLOBAL_MEDIA_QUERIES = {
     small: '(max-width: 767px)',
     medium: '(min-width: 768px) and (max-width: 1199px)',
@@ -72,7 +72,7 @@ const CollapseComponent = () => {
                 textAlign: 'left',
                 fontFamily: 'Alegreya Sans',
               }}>
-              Frequently Asked Questions
+              {heading}
             </Title>
           </Typography>
           <Row gutter={16}>

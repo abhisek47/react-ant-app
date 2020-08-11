@@ -1,8 +1,9 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import HomePage from '../pages/HomePage';
-import PageNotFound from '../components/PageNotFound';
 import GstPage from '../pages/GstPage';
+import GstReturnPage from '../pages/GstReturnPage';
+import NotFoundPage from '../pages/NotFoundPage';
 
 const Routes = () => {
   return (
@@ -11,7 +12,8 @@ const Routes = () => {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/gst' component={GstPage} />
-          <Route exact path='*' component={PageNotFound} />
+          <Route exact path='/gst-return' component={GstReturnPage} />
+          <Route exact path='*' component={NotFoundPage} />
         </Switch>
       </Router>
     </React.Fragment>
