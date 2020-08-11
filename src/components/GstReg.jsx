@@ -1,7 +1,18 @@
 import React from 'react';
 import { useMedia } from 'react-media';
-import { Layout, Typography, Row, Col, Space, Timeline, Table } from 'antd';
+import {
+  Layout,
+  Typography,
+  Row,
+  Col,
+  Space,
+  Timeline,
+  Table,
+  Breadcrumb,
+} from 'antd';
 import { CheckCircleFilled } from '@ant-design/icons';
+import FormComponent from './FormComponent';
+import { Link } from 'react-router-dom';
 
 const GstReg = () => {
   const columns = [
@@ -106,24 +117,38 @@ const GstReg = () => {
   return (
     <React.Fragment>
       <Layout style={{ background: '#fff' }}>
+        <Breadcrumb style={{ marginBottom: '12px' }}>
+          <Breadcrumb.Item>
+            <Link to='/'>Home</Link>
+          </Breadcrumb.Item>
+          <Breadcrumb.Item>Goods and Services Tax</Breadcrumb.Item>
+        </Breadcrumb>
         <Typography>
-          <Space direction='vertical'>
-            <Title style={heading} level={2}>
-              GST Registration
-            </Title>
-            <Paragraph style={matches.large ? subHading : ''}>
-              GST Number (GSTIN) is a unique 15 digit number which is allotted
-              to the assessee at the time of filing an application for
-              registration for Goods &amp; Service Tax.
-            </Paragraph>
-            <Paragraph style={matches.large ? subHading : ''}>
-              As per the GST law, every person (including company, LLP etc) has
-              to register under GST if the total turnover crosses Rs.40 lakh
-              (Rs.20 lakh in case of north eastern states). Hence, if your
-              turnover is more than 40 lakh or is going to be more than 20 lakh,
-              then it is advised that you should go for GST registration.
-            </Paragraph>
-          </Space>
+          <Row gutter={16}>
+            <Col span={matches.small ? 24 : 12}>
+              <Space direction='vertical'>
+                <Title style={heading} level={2}>
+                  GST Registration
+                </Title>
+                <Paragraph style={matches.large ? subHading : ''}>
+                  GST Number (GSTIN) is a unique 15 digit number which is
+                  allotted to the assessee at the time of filing an application
+                  for registration for Goods &amp; Service Tax.
+                </Paragraph>
+                <Paragraph style={matches.large ? subHading : ''}>
+                  As per the GST law, every person (including company, LLP etc)
+                  has to register under GST if the total turnover crosses Rs.40
+                  lakh (Rs.20 lakh in case of north eastern states). Hence, if
+                  your turnover is more than 40 lakh or is going to be more than
+                  20 lakh, then it is advised that you should go for GST
+                  registration.
+                </Paragraph>
+              </Space>
+            </Col>
+            <Col span={matches.small ? 24 : 12}>
+              <FormComponent />
+            </Col>
+          </Row>
           <Row gutter={16}>
             <Col span={matches.small ? 24 : 12}>
               <Space direction='vertical' style={{ marginTop: '24px' }}>
@@ -187,6 +212,9 @@ const GstReg = () => {
               columns={columns}
               dataSource={data}
               bordered
+              footer={() =>
+                '*The list is indicative and penalties are subject to periodic change.'
+              }
             />
           </Space>
         </Typography>
