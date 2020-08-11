@@ -46,12 +46,12 @@ class TabComponent extends React.Component {
                   <Tabs
                     defaultActiveKey='1'
                     tabPosition={matches.small ? 'top' : 'left'}
-                    style={{ height: '100%', width: '100%' }}>
+                    style={{ height: '100%' }}>
                     {item.map((items) => (
                       <TabPane
                         tab={items.head}
                         key={items.id}
-                        disabled={items.id === 28}>
+                        disabled={items.id === 10}>
                         {items.component}
                       </TabPane>
                     ))}

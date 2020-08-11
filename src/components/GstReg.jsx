@@ -1,9 +1,71 @@
 import React from 'react';
 import { useMedia } from 'react-media';
-import { Layout, Typography, Row, Col, Space } from 'antd';
+import { Layout, Typography, Row, Col, Space, Timeline, Table } from 'antd';
 import { CheckCircleFilled } from '@ant-design/icons';
 
 const GstReg = () => {
+  const columns = [
+    {
+      title: 'Type of GST Offencee',
+      dataIndex: 'name',
+      render: (text) => (
+        <Paragraph strong style={{ color: '#1890ff' }}>
+          {text}
+        </Paragraph>
+      ),
+    },
+    {
+      title: 'Applicable GST Penalty Amount',
+      dataIndex: 'address',
+    },
+  ];
+
+  const data = [
+    {
+      key: '1',
+      name: 'Delayed filing of GST Returns',
+      address:
+        'Rs. 50 per day (Rs.25 per day under CGST and an additional Rs. 25 per day under SGST) up to a maximum of Rs. 5000.',
+    },
+    {
+      key: '2',
+      name: 'Not filing GST Returns',
+      address: 'Higher amount among  – Rs. 10,000 or 10% of tax due under GST',
+    },
+    {
+      key: '3',
+      name: 'Committing Fraud',
+      address:
+        'Higher amount among – Rs. 10,000 or 100% of tax due under GST (mayinclude jail term for fraud cases of higher value)',
+    },
+    {
+      key: '4',
+      name: 'Aiding and Abetting Fraud',
+      address:
+        'Rs. 25,000 irrespective of whether offender is GST registered or not',
+    },
+    {
+      key: '5',
+      name: 'Charging wrong GST rates (higherrate than actual)',
+      address:
+        'Higher amount among – Rs. 10,000 or 100% of the tax amount due(applicable only if excess tax is not submitted with the government)',
+    },
+    {
+      key: '6',
+      name: 'Not issuing an invoice',
+      address: 'Higher amount among – Rs. 10,000 or 100% of tax amount due',
+    },
+    {
+      key: '7',
+      name: 'Not Registering Under GST (even though required to by law)',
+      address: 'Higher amount among – Rs. 10,000 or 100% of tax amount due',
+    },
+    {
+      key: '8',
+      name: 'Issuing incorrect invoice',
+      address: 'Rs. 25,000',
+    },
+  ];
   const gstCases = [
     { id: 1, case: 'Export sales or services' },
     { id: 2, case: 'Selling on E-commerce sites' },
@@ -94,22 +156,39 @@ const GstReg = () => {
                 <Paragraph strong style={matches.large ? subHading : ''}>
                   In below required documents is mandatory .
                 </Paragraph>
-                {document.map((cases) => (
-                  <Space align='baseline' key={cases.id}>
-                    <CheckCircleFilled
-                      style={{
-                        marginRight: '16px',
-                        color: '#52c41a',
-                      }}
-                    />
-                    <Paragraph level={4} style={matches.large ? subHading : ''}>
-                      {cases.case}
-                    </Paragraph>
-                  </Space>
-                ))}
+                <Timeline style={{ display: 'flex', flexDirection: 'column' }}>
+                  {document.map((cases) => (
+                    <Space align='baseline' key={cases.id}>
+                      <Timeline.Item style={{ padding: ' 5px 0', margin: '0' }}>
+                        <Paragraph
+                          level={4}
+                          style={matches.large ? subHading : ''}>
+                          {cases.case}
+                        </Paragraph>
+                      </Timeline.Item>
+                    </Space>
+                  ))}
+                </Timeline>
               </Space>
             </Col>
           </Row>
+          <Space direction='vertical' style={{ marginTop: '24px' }}>
+            <Title style={heading} level={2}>
+              GST Penalties under the GST Act
+            </Title>
+            <Paragraph style={matches.large ? subHading : ''}>
+              GST Penalties resulting from breach of the GST Act, 2017 are
+              subject to fines depending on various factors including but not
+              limited to the severity of the breach. The following are the
+              applicable penalties under the act for some key offences*:
+            </Paragraph>
+            <Table
+              style={{ fontFamily: 'Source Sans Pro' }}
+              columns={columns}
+              dataSource={data}
+              bordered
+            />
+          </Space>
         </Typography>
       </Layout>
     </React.Fragment>
