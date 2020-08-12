@@ -201,9 +201,21 @@ const ImportExportComponent = () => {
                 </Space>
               </Col>
               <Col span={matches.small ? 24 : 12}>
-                <Space direction='vertical' style={{ marginTop: '24px' }}>
+                <Space
+                  direction='vertical'
+                  style={{ marginTop: '24px', width: '100%' }}>
+                  <Typography>
+                    <Title
+                      level={2}
+                      style={{
+                        fontWeight: '500',
+                        textAlign: 'left',
+                        fontFamily: 'Alegreya Sans',
+                      }}>
+                      Questions Related Import Export Code
+                    </Title>
+                  </Typography>
                   <Collapse
-                    style={{ width: '100%' }}
                     bordered={false}
                     defaultActiveKey={['1']}
                     expandIcon={({ isActive }) => (

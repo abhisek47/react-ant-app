@@ -205,10 +205,6 @@ const CascaderComponent = () => {
               link: '#/provident-fund',
             },
             {
-              value: 'PF Return Filing',
-              label: 'PF Return Filing',
-            },
-            {
               value: 'ESI Registration',
               label: 'ESI Registration',
               link: '#/employees-state-insurance',

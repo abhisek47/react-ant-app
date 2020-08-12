@@ -233,7 +233,7 @@ const EsiComponent = () => {
                 </Space>
               </Col>
             </Row>
-            <Row>
+            <Row gutter={24}>
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
@@ -260,9 +260,21 @@ const EsiComponent = () => {
                 </Space>
               </Col>
               <Col span={matches.small ? 24 : 12}>
-                <Space direction='vertical' style={{ marginTop: '24px' }}>
+                <Space
+                  direction='vertical'
+                  style={{ marginTop: '24px', width: '100%' }}>
+                  <Typography>
+                    <Title
+                      level={2}
+                      style={{
+                        fontWeight: '500',
+                        textAlign: 'left',
+                        fontFamily: 'Alegreya Sans',
+                      }}>
+                      Questions Related Employees State Insurance
+                    </Title>
+                  </Typography>
                   <Collapse
-                    style={{ width: '100%' }}
                     bordered={false}
                     defaultActiveKey={['1']}
                     expandIcon={({ isActive }) => (

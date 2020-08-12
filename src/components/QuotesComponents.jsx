@@ -58,7 +58,7 @@ const QuotesComponents = () => {
               <img
                 src={director}
                 alt=''
-                style={{ width: matches.large ? '95%' : '95%' }}
+                style={{ width: matches.large ? '100%' : '95%' }}
               />
             </Col>
           </Row>

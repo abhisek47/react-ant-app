@@ -101,23 +101,22 @@ class MenuComponent extends React.Component {
           <Menu.Item key='29'>
             <Link to='/provident-fund'>PF Registration</Link>
           </Menu.Item>
-          <Menu.Item key='30'>PF Return Registration</Menu.Item>
-          <Menu.Item key='31'>
+          <Menu.Item key='30'>
             <Link to='/employees-state-insurance'>ESI Registration</Link>
           </Menu.Item>
-          <Menu.Item key='32'>
+          <Menu.Item key='31'>
             <Link to='/employees-state-insurance-return'>
               ESI Return Filing
             </Link>
           </Menu.Item>
-          <Menu.Item key='33'>PAN Application</Menu.Item>
-          <Menu.Item key='34'>TAN Application</Menu.Item>
-          <Menu.Item key='35'>80G Registration</Menu.Item>
+          <Menu.Item key='32'>PAN Application</Menu.Item>
+          <Menu.Item key='33'>TAN Application</Menu.Item>
+          <Menu.Item key='34'>80G Registration</Menu.Item>
         </SubMenu>
         <SubMenu key='sub5' icon={<AppstoreAddOutlined />} title='Resources'>
-          <Menu.Item key='36'>Terms And Conditions</Menu.Item>
-          <Menu.Item key='37'>Privacy Policy</Menu.Item>
-          <Menu.Item key='38'>Declimar Policy</Menu.Item>
+          <Menu.Item key='35'>Terms And Conditions</Menu.Item>
+          <Menu.Item key='36'>Privacy Policy</Menu.Item>
+          <Menu.Item key='37'>Declimar Policy</Menu.Item>
         </SubMenu>
       </Menu>
     );

@@ -13,7 +13,7 @@ export class PfPage extends Component {
       <React.Fragment>
         <HeaderComponent />
         <PfComponent />
-        <CollapseComponent heading='Questions Related ESI Registration' />
+        <CollapseComponent heading='Questions Related Provident Fund' />
         <FooterComponent />
       </React.Fragment>
     );
