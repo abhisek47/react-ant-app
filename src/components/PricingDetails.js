@@ -39,3 +39,7 @@ export const esiPremium = ['Up to 50 employee'];
 export const esiReturnBasic = ['Up to 20 employee'];
 export const esiReturnStandard = ['Up to 50 employee'];
 export const esiReturnPremium = ['Up to 80 employee'];
+
+export const tdsBasic = ['One quarter'];
+export const tdsStandard = ['Two quarter'];
+export const tdsPremium = ['Four quarter'];

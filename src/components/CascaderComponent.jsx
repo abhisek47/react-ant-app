@@ -42,6 +42,7 @@ const CascaderComponent = () => {
             {
               value: 'Import Export Code',
               label: 'Import Export Code',
+              link: '#/import-export-code',
             },
             {
               value: 'ISO Registration',
@@ -162,6 +163,7 @@ const CascaderComponent = () => {
             {
               value: 'TDS Return',
               label: 'TDS Return',
+              link: '#/tax-deducted-at-source',
             },
             {
               value: 'Excise Return',

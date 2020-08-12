@@ -8,6 +8,8 @@ import PfPage from '../pages/PfPage';
 import EsiPage from '../pages/EsiPage';
 import EsiReturnPage from '../pages/EsiReturnPage';
 import IsoPage from '../pages/IsoPage';
+import TdsPage from '../pages/TdsPage';
+import ImportExportPage from '../pages/ImortExportPage';
 
 const Routes = () => {
   return (
@@ -25,6 +27,12 @@ const Routes = () => {
             component={EsiReturnPage}
           />
           <Route exact path='/iso' component={IsoPage} />
+          <Route exact path='/tax-deducted-at-source' component={TdsPage} />
+          <Route
+            exact
+            path='/import-export-code'
+            component={ImportExportPage}
+          />
           <Route exact path='*' component={NotFoundPage} />
         </Switch>
       </Router>

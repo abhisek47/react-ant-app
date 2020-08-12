@@ -141,8 +141,7 @@ const GstComponent = () => {
               paraOne='GST Number (GSTIN) is a unique 15 digit number which is allotted
               to the assessee at the time of filing an application for
               registration for Goods &amp; Service Tax.'
-              paraTwo='As per the GST law, every person (including company, LLP etc) has
-              to register under GST if the total turnover crosses Rs.40 lakh
+              paraTwo='As per the GST law, every person (including company, LLP etc) has to register under GST if the total turnover crosses Rs.40 lakh
               (Rs.20 lakh in case of north eastern states). Hence, if your
               turnover is more than 40 lakh or is going to be more than 20 lakh,
               then it is advised that you should go for GST registration.'

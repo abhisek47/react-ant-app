@@ -9,7 +9,6 @@ import {
   Breadcrumb,
   Timeline,
   Card,
-  Divider,
   List,
 } from 'antd';
 import { Link } from 'react-router-dom';
@@ -181,10 +180,10 @@ const IsoComponent = () => {
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Card style={{ fontFamily: 'Source Sans Pro' }}>
-                    <Divider orientation='left'>
-                      What Can You Do With This Certification?
-                    </Divider>
-                    <Paragraph level={4} style={matches.large ? subHading : ''}>
+                    <Title level={4}>
+                      What can you do with this certification ?
+                    </Title>
+                    <Paragraph style={matches.large ? subHading : ''}>
                       You can use the fact that your company is ISO
                       9001:2015 certified in your marketing. Your management
                       system and its processes have been certified to ISO
@@ -197,12 +196,15 @@ const IsoComponent = () => {
                 </Space>
                 <Space direction='vertical' style={{ marginTop: '10px' }}>
                   <Card style={{ fontFamily: 'Source Sans Pro' }}>
-                    <Divider orientation='left'>What can’t you do?</Divider>
+                    <Title level={4}>What can’t you do?</Title>
                     <List
                       size='large'
-                      bordered
                       dataSource={data}
-                      renderItem={(item) => <List.Item>{item}</List.Item>}
+                      renderItem={(item) => (
+                        <Paragraph style={matches.large ? subHading : ''}>
+                          {item}
+                        </Paragraph>
+                      )}
                     />
                   </Card>
                 </Space>

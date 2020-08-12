@@ -54,7 +54,9 @@ class MenuComponent extends React.Component {
           <Menu.Item key='3'>Unregistered Partnership</Menu.Item>
           <Menu.Item key='4'>Registered Partnership</Menu.Item>
           <Menu.Item key='5'>Limited Limited Proprietorship (LLP)</Menu.Item>
-          <Menu.Item key='6'>Import Export Code</Menu.Item>
+          <Menu.Item key='6'>
+            <Link to='/import-export-code'>Import Export Code</Link>
+          </Menu.Item>
           <Menu.Item key='7'>
             <Link to='/iso'>ISO Registration</Link>
           </Menu.Item>
@@ -88,7 +90,9 @@ class MenuComponent extends React.Component {
           <Menu.Item key='21'>Income Tax Return - 5</Menu.Item>
           <Menu.Item key='22'>Income Tax Return - 6</Menu.Item>
           <Menu.Item key='23'>Income Tax Return - 7</Menu.Item>
-          <Menu.Item key='24'>TDS Return</Menu.Item>
+          <Menu.Item key='24'>
+            <Link to='/tax-deducted-at-source'>TDS Return</Link>
+          </Menu.Item>
           <Menu.Item key='25'>Excise Return</Menu.Item>
         </SubMenu>
         <SubMenu key='sub4' icon={<DatabaseOutlined />} title='Compliances'>

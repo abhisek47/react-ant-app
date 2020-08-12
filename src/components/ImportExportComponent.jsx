@@ -12,11 +12,9 @@ import {
 } from 'antd';
 import { Link } from 'react-router-dom';
 import RegHeader from './RegHeader';
-import PricingComponent from './PricingComponent';
-import { esiBasic, esiStandard, esiPremium } from './PricingDetails';
 import { CheckCircleFilled, CaretRightOutlined } from '@ant-design/icons';
 
-const EsiComponent = () => {
+const ImportExportComponent = () => {
   const tab1 = [
     {
       id: 1,
@@ -37,92 +35,51 @@ const EsiComponent = () => {
         'In this age of cut- throat competition, everyone wants to grow their business beyond the limits of the domestic market.However, doing business globally isn’t just a cup of tea for everyone.Before going global, you need to follow several procedures and laws in place and get different registration and license.IEC(Import Export Code) license is one of such prerequisite when you’re thinking of importing or exporting from India.',
     },
   ];
-  const esiBenefits = [
+  const iecStep = [
     {
       id: 1,
-      case:
-        'Sickness benefits at the rate of 70% (in the form of salary), in case of any certified illness certified and which lasts for a maximum of 91 days in any year',
+      case: 'Filing of documents on your behalf',
     },
-    { id: 2, case: 'Medical Benefits to an employee and his family members' },
+    { id: 2, case: 'Paying necessary fee' },
     {
       id: 3,
-      case: 'Maternity Benefit to the women who are pregnant (paid leaves)',
+      case: 'Apply for licence',
+    },
+    {
+      id: 4,
+      case: 'Transfer the licence to you after approval',
+    },
+  ];
+  const iecDocument = [
+    { id: 1, case: 'Copy of PAN Card' },
+    { id: 2, case: 'Copy of Aadhaar Card/ Voter identity card of applicant' },
+    {
+      id: 3,
+      case:
+        'Telephone Bill/mobile postpaid bill/electricity bill/rent agreement/lease deed/sale deed /partnership deed as a address proof .',
     },
     {
       id: 4,
       case:
-        'If the death of the employee happens while on work – 90% of salary is given to his dependents every month after the death of the employee',
+        'Cancelled cheque of individual/enterprise having name printed on cheque.',
     },
-    { id: 5, case: 'Same as above in case of disability of the employee' },
-    { id: 6, case: 'Funeral expenses' },
-    { id: 7, case: 'Old age care medical expenses' },
   ];
-  const esiDocument = [
+  const iecCases = [
     {
       id: 1,
       case:
-        'A registration certificate obtained either under the: a. Factories Act b.Shops and Establishment Act',
+        'IEC is mandatory for import and export of goods.However in the following cases IEC is not mandatory',
     },
     {
       id: 2,
       case:
-        'Certificate of Registration in case of Company, and Partnership deed in case of a Partnership',
+        'Person exporting or importing goods for personal use , not related to business',
     },
     {
       id: 3,
       case:
-        'Memorandum of Association and Articles of Association of the Company',
+        'Persons exporting or importing goods to/from Nepal or Myanmar through Indo- Myanmar border areas, upto value of rs 25000',
     },
-    {
-      id: 4,
-      case: 'A list of all the employees working in the Establishment',
-    },
-    {
-      id: 5,
-      case:
-        'PAN Card of the Business Entity as well as all the Employees working under the entity',
-    },
-    {
-      id: 6,
-      case: 'The compensation details of all the employees',
-    },
-    {
-      id: 7,
-      case: 'A cancelled cheque of the Bank Account of the Company',
-    },
-    {
-      id: 8,
-      case: 'List of Directors of the Company',
-    },
-    {
-      id: 9,
-      case: 'List of the Shareholders of the Company',
-    },
-    {
-      id: 10,
-      case: 'Register containing the attendance of the employees',
-    },
-  ];
-  const esiEntities = [
-    {
-      id: 1,
-      case: 'Shops',
-    },
-    { id: 2, case: 'Restaurants or Hotels only engaged in sales.' },
-    {
-      id: 3,
-      case: 'Cinemas',
-    },
-    {
-      id: 4,
-      case: 'Road Motor Transport Establishments',
-    },
-    {
-      id: 5,
-      case:
-        'Newspaper establishments.(which is not covered under the factory act)',
-    },
-    { id: 6, case: 'Private Educational Institutions' },
   ];
   const GLOBAL_MEDIA_QUERIES = {
     small: '(max-width: 767px)',
@@ -160,36 +117,24 @@ const EsiComponent = () => {
             <Breadcrumb.Item>
               <Link to='/'>Home</Link>
             </Breadcrumb.Item>
-            <Breadcrumb.Item>
-              Employees State Insurance Registration
-            </Breadcrumb.Item>
+            <Breadcrumb.Item>Import Export Code Registration</Breadcrumb.Item>
           </Breadcrumb>
           <Typography>
             <RegHeader
-              title='Employees State Insurance Registration'
-              paraOne='ESI stands for Employee State Insurance managed by the Employee State Insurance Corporation which is an autonomous body created by the law under the Ministry of Labour and Employment, Government of India. This scheme is started for Indian workers.  Under this scheme, the workers are provided with a huge variety of medical, monetary and other benefits by the employer. Any Company having more than 10 employees (in some states it is 20 employees) who have the maximum salary of Rs. 15000/- has to mandatorily register itself with the ESIC.'
-              paraTwo='Under this scheme, the employer needs to contribute an amount of 4.75% of the total monthly salary payable to the employee whereas the employer needs to contribute only 1.75% of his monthly salary every month of the year. The only exemption to the employee in paying his contribution is whose salary is less than Rs. 100/- per day.'
-              tagline='Get your ESI registered @₹ 8,000 Only'
+              title='Import Export Code Registration'
+              paraOne='IEC(Import export code ) or import export licence . is a 10 digit code(based on pan number) which is provided by DGFT for import export transactions. Iec can be obtained in personal name or in company name. An IEC number issued to applicant shall be valid for all its divisions/ units/ factories/branches. IEC is valid for lifetime and no renewal is needed.'
+              tagline='Get your Import Export Code egistered @₹ 3,500 Only'
             />
-            <PricingComponent
-              basic={esiBasic}
-              standard={esiStandard}
-              premium={esiPremium}
-              basicPrice='8000'
-              standardPrice='15000'
-              premiumPrice='26000'
-            />
-            <Row gutter={32}>
+            <Row gutter={16}>
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
-                    What are the benefits of ESI registration ?
+                    When Import Export Code Registration is mandatory ?
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
-                    The benefits of registering under this scheme are varied.
-                    Some of them are:
+                    In below all cases registration is mandatory .
                   </Paragraph>
-                  {esiBenefits.map((cases) => (
+                  {iecCases.map((cases) => (
                     <Space align='baseline' key={cases.id}>
                       <CheckCircleFilled
                         style={{
@@ -208,7 +153,7 @@ const EsiComponent = () => {
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
-                    Documents Required for ESI Registration
+                    Documents Required for Import Export Code Registration
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
                     In below all the documents is required
@@ -216,7 +161,7 @@ const EsiComponent = () => {
                   <Row>
                     <Timeline
                       style={{ display: 'flex', flexDirection: 'column' }}>
-                      {esiDocument.map((cases) => (
+                      {iecDocument.map((cases) => (
                         <Space align='baseline' key={cases.id}>
                           <Timeline.Item
                             style={{ padding: ' 5px 0', margin: '0' }}>
@@ -237,13 +182,9 @@ const EsiComponent = () => {
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
-                    Which are the entities covered by the ESI ?
+                    Registration step for Import Export Code
                   </Title>
-                  <Paragraph strong style={matches.large ? subHading : ''}>
-                    As per the government notification dated Sec 1(5) of the ESI
-                    Act the following entities are covered:
-                  </Paragraph>
-                  {esiEntities.map((cases) => (
+                  {iecStep.map((cases) => (
                     <Space align='baseline' key={cases.id}>
                       <CaretRightOutlined
                         style={{
@@ -288,4 +229,4 @@ const EsiComponent = () => {
   );
 };
 
-export default EsiComponent;
+export default ImportExportComponent;
