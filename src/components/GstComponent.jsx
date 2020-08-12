@@ -146,7 +146,7 @@ const GstComponent = () => {
               (Rs.20 lakh in case of north eastern states). Hence, if your
               turnover is more than 40 lakh or is going to be more than 20 lakh,
               then it is advised that you should go for GST registration.'
-              tagline='Get your Business Registered under GST @₹ 1,800 Only'
+              tagline='Get your business registered under GST @₹ 1,800 Only'
             />
             <Row gutter={16}>
               <Col span={matches.small ? 24 : 12}>

@@ -46,6 +46,7 @@ const CascaderComponent = () => {
             {
               value: 'ISO Registration',
               label: 'ISO Registration',
+              link: '#/iso',
             },
           ],
         },

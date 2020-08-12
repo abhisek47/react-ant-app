@@ -175,7 +175,7 @@ const GstReturnComponent = () => {
               title='GST Return Filing'
               paraOne='A return is a document containing details of income which a taxpayer is required to file with the tax administrative authorities. This is used by tax authorities to calculate tax liability.'
               paraTwo='Under GST, a registered dealer has to file GST returns that include: Purchases, Sales, Output GST (On sales), Input tax credit (GST paid on purchases) To file GST returns, GST compliant sales and purchase invoices are required. You can generate GST compliant invoices for free on ClientFiling.'
-              tagline='Get your Return Filing under GST @₹ 1,800 Only'
+              tagline='Get your return filing under GST @₹ 2,899 Only'
             />
             <PricingComponent
               basic={gstReturnBasic}

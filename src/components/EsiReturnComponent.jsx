@@ -144,7 +144,7 @@ const EsiReturnComponent = () => {
             <RegHeader
               title='Employees State Insurance Return Filing'
               paraOne='Established under the ESI Act, 1948, ESIC (Employees’ State Insurance Corporation) provides benefits to employees in the event of their sickness, death, disablement, injury, etc. The finance of this scheme comes from contributions from both employees and employers. Any employee who earns a monthly income of less than Rs. 21000 per month is covered under this scheme. Apart from employees, the family members of employees are also provided benefits under this Act. Any establishment that employs 10 or more employees is mandated by law to register under this Act. The contribution of employers in this scheme is 4.75% and that of employees is 1.75%, thus making a total of 6.5%.'
-              tagline='Get your ESI Return Filing under GST @₹ 1,800 Only'
+              tagline='Get your ESI return filing @₹ 799 Only'
             />
             <PricingComponent
               basic={esiReturnBasic}

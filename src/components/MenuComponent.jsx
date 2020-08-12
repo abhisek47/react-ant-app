@@ -55,7 +55,9 @@ class MenuComponent extends React.Component {
           <Menu.Item key='4'>Registered Partnership</Menu.Item>
           <Menu.Item key='5'>Limited Limited Proprietorship (LLP)</Menu.Item>
           <Menu.Item key='6'>Import Export Code</Menu.Item>
-          <Menu.Item key='7'>ISO Registration</Menu.Item>
+          <Menu.Item key='7'>
+            <Link to='/iso'>ISO Registration</Link>
+          </Menu.Item>
         </SubMenu>
         <SubMenu key='sub2' icon={<AppstoreOutlined />} title='Property'>
           <Menu.Item key='8'>Trademark Registration</Menu.Item>

@@ -169,7 +169,7 @@ const EsiComponent = () => {
               title='Employees State Insurance Registration'
               paraOne='ESI stands for Employee State Insurance managed by the Employee State Insurance Corporation which is an autonomous body created by the law under the Ministry of Labour and Employment, Government of India. This scheme is started for Indian workers.  Under this scheme, the workers are provided with a huge variety of medical, monetary and other benefits by the employer. Any Company having more than 10 employees (in some states it is 20 employees) who have the maximum salary of Rs. 15000/- has to mandatorily register itself with the ESIC.'
               paraTwo='Under this scheme, the employer needs to contribute an amount of 4.75% of the total monthly salary payable to the employee whereas the employer needs to contribute only 1.75% of his monthly salary every month of the year. The only exemption to the employee in paying his contribution is whose salary is less than Rs. 100/- per day.'
-              tagline='Get your  ESI  Registered under GST @₹ 1,800 Only'
+              tagline='Get your ESI registered @₹ 8,000 Only'
             />
             <PricingComponent
               basic={esiBasic}

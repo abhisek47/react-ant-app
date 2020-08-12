@@ -116,7 +116,7 @@ const PfComponent = () => {
             <RegHeader
               title='Employees Provident Fund Registration'
               paraOne='Establishment Registration with Employers Provident Fund Organisation (EPFO) is mandatory if the number of employees exceeds 20 and may be obtained voluntarily if the employee’s number is less than twenty. Our dedicated team will help you to your company with EPFO.'
-              tagline='Get your  Provident Fund Registered under GST @₹ 1,800 Only'
+              tagline='Get your provident fund registered  @₹ 8,000 Only'
             />
             <PricingComponent
               basic={pfBasic}

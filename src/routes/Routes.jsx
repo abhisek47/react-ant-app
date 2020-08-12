@@ -7,6 +7,7 @@ import NotFoundPage from '../pages/NotFoundPage';
 import PfPage from '../pages/PfPage';
 import EsiPage from '../pages/EsiPage';
 import EsiReturnPage from '../pages/EsiReturnPage';
+import IsoPage from '../pages/IsoPage';
 
 const Routes = () => {
   return (
@@ -23,6 +24,7 @@ const Routes = () => {
             path='/employees-state-insurance-return'
             component={EsiReturnPage}
           />
+          <Route exact path='/iso' component={IsoPage} />
           <Route exact path='*' component={NotFoundPage} />
         </Switch>
       </Router>
