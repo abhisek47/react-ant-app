@@ -208,10 +208,12 @@ const CascaderComponent = () => {
             {
               value: 'ESI Registration',
               label: 'ESI Registration',
+              link: '#/employees-state-insurance',
             },
             {
-              value: 'ESI Return Registration',
-              label: 'ESI Return Registration',
+              value: 'ESI Return Filing',
+              label: 'ESI Return Filing',
+              link: '#/employees-state-insurance-return',
             },
           ],
         },

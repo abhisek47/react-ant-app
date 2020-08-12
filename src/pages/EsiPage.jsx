@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
+import EsiComponent from '../components/EsiComponent';
 import HeaderComponent from '../components/HeaderComponent';
 import FooterComponent from '../components/FooterComponent';
-import PfComponent from '../components/PfComponent';
-import CollapseComponent from '../components/CollapseComponent';
 
-export class PfPage extends Component {
+export class EsiPage extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
@@ -12,12 +11,11 @@ export class PfPage extends Component {
     return (
       <React.Fragment>
         <HeaderComponent />
-        <PfComponent />
-        <CollapseComponent heading='Questions Related ESI Registration' />
+        <EsiComponent />
         <FooterComponent />
       </React.Fragment>
     );
   }
 }
 
-export default PfPage;
+export default EsiPage;

@@ -96,8 +96,14 @@ class MenuComponent extends React.Component {
             <Link to='/provident-fund'>PF Registration</Link>
           </Menu.Item>
           <Menu.Item key='30'>PF Return Registration</Menu.Item>
-          <Menu.Item key='31'>ESI Registration</Menu.Item>
-          <Menu.Item key='32'>ESI Return Registration</Menu.Item>
+          <Menu.Item key='31'>
+            <Link to='/employees-state-insurance'>ESI Registration</Link>
+          </Menu.Item>
+          <Menu.Item key='32'>
+            <Link to='/employees-state-insurance-return'>
+              ESI Return Filing
+            </Link>
+          </Menu.Item>
           <Menu.Item key='33'>PAN Application</Menu.Item>
           <Menu.Item key='34'>TAN Application</Menu.Item>
           <Menu.Item key='35'>80G Registration</Menu.Item>

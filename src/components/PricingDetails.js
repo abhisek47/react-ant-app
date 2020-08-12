@@ -31,3 +31,11 @@ export const gstReturnPremium = [
 export const pfBasic = ['Up to 20 employee', ' Alone Without ESI'];
 export const pfStandard = ['Up to 20 employee', ' Alone With ESI'];
 export const pfPremium = ['Up to 50 employee', ' Alone With ESI'];
+
+export const esiBasic = ['Up to 20 employee'];
+export const esiStandard = ['Up to 20 employee'];
+export const esiPremium = ['Up to 50 employee'];
+
+export const esiReturnBasic = ['Up to 20 employee'];
+export const esiReturnStandard = ['Up to 50 employee'];
+export const esiReturnPremium = ['Up to 80 employee'];
