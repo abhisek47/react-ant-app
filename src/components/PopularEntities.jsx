@@ -115,12 +115,14 @@ const PopularEntities = () => {
                   dataSource={incomeTax}
                   renderItem={(item) => <List.Item>{item}</List.Item>}
                 />
-                <Button
-                  type='primary'
-                  size='middle'
-                  style={{ marginTop: '24px' }}>
-                  Get Started
-                </Button>
+                <Link to='/income-tax-return-1'>
+                  <Button
+                    type='primary'
+                    size='middle'
+                    style={{ marginTop: '24px' }}>
+                    Get Started
+                  </Button>
+                </Link>
               </Card>
             </Col>
           </Row>

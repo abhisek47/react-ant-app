@@ -83,7 +83,9 @@ class MenuComponent extends React.Component {
           <Menu.Item key='16'>
             <Link to='/gst-return'>GST Return - 9</Link>
           </Menu.Item>
-          <Menu.Item key='17'>Income Tax Return - 1</Menu.Item>
+          <Menu.Item key='17'>
+            <Link to='/income-tax-return-1'>Income Tax Return - 1</Link>
+          </Menu.Item>
           <Menu.Item key='18'>Income Tax Return - 2</Menu.Item>
           <Menu.Item key='19'>Income Tax Return - 3</Menu.Item>
           <Menu.Item key='20'>Income Tax Return - 4</Menu.Item>

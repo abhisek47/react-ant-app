@@ -10,6 +10,7 @@ import EsiReturnPage from '../pages/EsiReturnPage';
 import IsoPage from '../pages/IsoPage';
 import TdsPage from '../pages/TdsPage';
 import ImportExportPage from '../pages/ImortExportPage';
+import ItrOnePage from '../pages/ItrOnePage';
 
 const Routes = () => {
   return (
@@ -33,6 +34,7 @@ const Routes = () => {
             path='/import-export-code'
             component={ImportExportPage}
           />
+          <Route exact path='/income-tax-return-1' component={ItrOnePage} />
           <Route exact path='*' component={NotFoundPage} />
         </Switch>
       </Router>

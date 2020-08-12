@@ -43,3 +43,13 @@ export const esiReturnPremium = ['Up to 80 employee'];
 export const tdsBasic = ['One quarter'];
 export const tdsStandard = ['Two quarter'];
 export const tdsPremium = ['Four quarter'];
+
+export const itrOneBasic = [
+  'Income tax return filing for an individual with salary income of less than Rs.5 lakhs.',
+];
+export const itrOneStandard = [
+  'Income tax return filing for an individual with salary income of less than Rs.10 lakhs',
+];
+export const itrOnePremium = [
+  'Income tax return filing for an individual with salary income of above than Rs.10 lakhs',
+];

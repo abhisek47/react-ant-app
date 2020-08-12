@@ -51,7 +51,7 @@ const QuotesComponents = () => {
                 <Paragraph strong style={{ marginTop: '32px' }}>
                   Uday Choudhary
                 </Paragraph>
-                <Text>CEO of Clientfilingindia</Text>
+                <Text>Chief executive officer</Text>
               </Typography>
             </Col>
             <Col span={matches.small ? 24 : 7}>
