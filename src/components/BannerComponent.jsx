@@ -36,7 +36,9 @@ const BannerComponent = () => {
                 backgroundImage: `url(${src})`,
                 height: '100%',
                 backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'center middle',
+                backgroundPosition: matches.small
+                  ? 'end middle'
+                  : 'center middle',
                 backgroundSize: 'cover',
               })}>
               <Content

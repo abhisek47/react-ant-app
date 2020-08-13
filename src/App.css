@@ -4,9 +4,9 @@
   min-height: 280px;
 }
 .logo {
-  width: 120px;
-  height: 31px;
-  background: rgba(255, 255, 255, 0.2);
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
   margin: 16px 24px 16px 0;
   float: left;
 }

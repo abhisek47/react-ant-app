@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Menu, Button } from 'antd';
+import { Layout, Menu, Button, Typography } from 'antd';
 import CascaderComponent from './CascaderComponent';
 import DrawerComponent from './DrawerComponent';
 import { useMedia } from 'react-media';
@@ -14,6 +14,7 @@ const HeaderComponent = () => {
   };
   const matches = useMedia({ queries: GLOBAL_MEDIA_QUERIES });
   const { Header } = Layout;
+  const { Paragraph } = Typography;
   return (
     <React.Fragment>
       <Layout style={{ fontFamily: 'Source Sans Pro' }}>
@@ -24,7 +25,9 @@ const HeaderComponent = () => {
             padding: matches.large ? '0 50px' : '0 30px',
           }}>
           <Link to='/'>
-            <div className='logo' />
+            <Paragraph strong style={{ fontSize: '18px' }} className='logo'>
+              Client Filing India
+            </Paragraph>
           </Link>
           <Menu theme='dark' mode='horizontal' defaultSelectedKeys={['1']}>
             {matches.large && (
