@@ -114,6 +114,7 @@ const MainComponent = () => {
                         marginBottom: `24px`,
                         border: 'none',
                         boxShadow: '5px 5px 10px rgba(0,0,0,.1)',
+                        height: '300px',
                       })}>
                       <div style={{ padding: '24px' }}>
                         <Title
