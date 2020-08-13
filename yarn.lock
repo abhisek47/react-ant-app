@@ -9403,6 +9403,11 @@ react-media@^2.0.0-rc.1:
     json2mq "^0.2.0"
     prop-types "^15.5.10"
 
+react-progressive-image-loading@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-progressive-image-loading/-/react-progressive-image-loading-3.0.3.tgz#7e99298b9bd76bc7dcfba9cdf83c263d41f17dc3"
+  integrity sha1-fpkpi5vXa8fc+6nN+DwmPUHxfcM=
+
 react-router-dom@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-5.2.0.tgz#9e65a4d0c45e13289e66c7b17c7e175d0ea15662"
