@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2a5e54261f27ee0bf405e70e9287eaaf",
+    "revision": "ad7ac169d1e50ee88539b8bc61ed4b66",
     "url": "/react-ant-app/index.html"
   },
   {
-    "revision": "350f181694023c898fff",
+    "revision": "fbc4b6115263c1eadee6",
     "url": "/react-ant-app/static/css/2.9c8c8187.chunk.css"
   },
   {
-    "revision": "2737e21dbc30637fd8cf",
+    "revision": "6703ce499371d07a9a04",
     "url": "/react-ant-app/static/css/main.2e42de9b.chunk.css"
   },
   {
-    "revision": "350f181694023c898fff",
-    "url": "/react-ant-app/static/js/2.474b9323.chunk.js"
+    "revision": "fbc4b6115263c1eadee6",
+    "url": "/react-ant-app/static/js/2.21507e24.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/react-ant-app/static/js/2.474b9323.chunk.js.LICENSE.txt"
+    "url": "/react-ant-app/static/js/2.21507e24.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2737e21dbc30637fd8cf",
-    "url": "/react-ant-app/static/js/main.d83d5f80.chunk.js"
+    "revision": "6703ce499371d07a9a04",
+    "url": "/react-ant-app/static/js/main.6de71c1c.chunk.js"
   },
   {
     "revision": "506d99485b88e396c66b",
@@ -36,6 +36,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-ant-app/static/media/tallFour.08bc3473.jpg"
   },
   {
+    "revision": "6aad04729e6e481ddc149c7df31c9b69",
+    "url": "/react-ant-app/static/media/tallFourTiny.6aad0472.jpg"
+  },
+  {
     "revision": "aade44ccc100b5726497300f15013126",
     "url": "/react-ant-app/static/media/tallOne.aade44cc.jpg"
   },
@@ -46,6 +50,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "232cb0871dbe662781b3b4d02047a1dd",
     "url": "/react-ant-app/static/media/tallTwo.232cb087.jpg"
+  },
+  {
+    "revision": "61d8698396265feb6e504128c1ecb819",
+    "url": "/react-ant-app/static/media/tallTwoTiny.61d86983.jpg"
   },
   {
     "revision": "25c5712922e0bd47a4018c04865bd6c4",
