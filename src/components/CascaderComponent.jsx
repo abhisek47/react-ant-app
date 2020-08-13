@@ -1,6 +1,6 @@
 import React from 'react';
 import { Cascader } from 'antd';
-import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const CascaderComponent = () => {
   const options = [
@@ -15,7 +15,7 @@ const CascaderComponent = () => {
             {
               value: 'Company Registration',
               label: 'Company Registration',
-              link: '#/private-limited-company',
+              link: '/private-limited-company',
             },
             {
               value: 'Proprietorship Firm Registration',
@@ -42,12 +42,12 @@ const CascaderComponent = () => {
             {
               value: 'Import Export Code',
               label: 'Import Export Code',
-              link: '#/import-export-code',
+              link: '/import-export-code',
             },
             {
               value: 'ISO Registration',
               label: 'ISO Registration',
-              link: '#/iso',
+              link: '/iso',
             },
           ],
         },
@@ -98,27 +98,27 @@ const CascaderComponent = () => {
             {
               value: 'GST Registration',
               label: 'GST Registration',
-              link: '#/gst',
+              link: '/gst',
             },
             {
               value: 'GST Return - 1',
               label: 'GST Return - 1',
-              link: '#/gst-return',
+              link: '/gst-return',
             },
             {
               value: 'GST Return - 3B',
               label: 'GST Return - 3B',
-              link: '#/gst-return',
+              link: '/gst-return',
             },
             {
               value: 'GST Return - 4',
               label: 'GST Return - 4',
-              link: '#/gst-return',
+              link: '/gst-return',
             },
             {
               value: 'GST Return - 9',
               label: 'GST Return - 9',
-              link: '#/gst-return',
+              link: '/gst-return',
             },
           ],
         },
@@ -129,37 +129,37 @@ const CascaderComponent = () => {
             {
               value: 'Income Tax Return-1',
               label: 'Income Tax Return-1',
-              link: '#/income-tax-return-1',
+              link: '/income-tax-return-1',
             },
             {
               value: 'Income Tax Return-2',
               label: 'Income Tax Return-2',
-              link: '#/income-tax-return-2',
+              link: '/income-tax-return-2',
             },
             {
               value: 'Income Tax Return-3',
               label: 'Income Tax Return-3',
-              link: '#/income-tax-return-3',
+              link: '/income-tax-return-3',
             },
             {
               value: 'Income Tax Return-4',
               label: 'Income Tax Return-4',
-              link: '#/income-tax-return-4',
+              link: '/income-tax-return-4',
             },
             {
               value: 'Income Tax Return-5',
               label: 'Income Tax Return-5',
-              link: '#/income-tax-return-5',
+              link: '/income-tax-return-5',
             },
             {
               value: 'Income Tax Return-6',
               label: 'Income Tax Return-6',
-              link: '#/income-tax-return-6',
+              link: '/income-tax-return-6',
             },
             {
               value: 'Income Tax Return-7',
               label: 'Income Tax Return-7',
-              link: '#/income-tax-return-7',
+              link: '/income-tax-return-7',
             },
           ],
         },
@@ -170,7 +170,7 @@ const CascaderComponent = () => {
             {
               value: 'TDS Return',
               label: 'TDS Return',
-              link: '#/tax-deducted-at-source',
+              link: '/tax-deducted-at-source',
             },
             {
               value: 'Excise Return',
@@ -209,17 +209,17 @@ const CascaderComponent = () => {
             {
               value: 'PF Registration',
               label: 'PF Registration',
-              link: '#/provident-fund',
+              link: '/provident-fund',
             },
             {
               value: 'ESI Registration',
               label: 'ESI Registration',
-              link: '#/employees-state-insurance',
+              link: '/employees-state-insurance',
             },
             {
               value: 'ESI Return Filing',
               label: 'ESI Return Filing',
-              link: '#/employees-state-insurance-return',
+              link: '/employees-state-insurance-return',
             },
           ],
         },
@@ -272,7 +272,7 @@ const CascaderComponent = () => {
     console.log(value);
     const page = (window.location.href = link[2].link);
     console.log(page);
-    return <Redirect to={page} />;
+    return <Link to={page} />;
   }
   return (
     <React.Fragment>
