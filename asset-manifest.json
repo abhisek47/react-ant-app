@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-ant-app/static/css/main.2e42de9b.chunk.css",
-    "main.js": "/react-ant-app/static/js/main.6de71c1c.chunk.js",
-    "main.js.map": "/react-ant-app/static/js/main.6de71c1c.chunk.js.map",
+    "main.js": "/react-ant-app/static/js/main.b8ba3ce0.chunk.js",
+    "main.js.map": "/react-ant-app/static/js/main.b8ba3ce0.chunk.js.map",
     "runtime-main.js": "/react-ant-app/static/js/runtime-main.76fd7994.js",
     "runtime-main.js.map": "/react-ant-app/static/js/runtime-main.76fd7994.js.map",
     "static/css/2.9c8c8187.chunk.css": "/react-ant-app/static/css/2.9c8c8187.chunk.css",
     "static/js/2.21507e24.chunk.js": "/react-ant-app/static/js/2.21507e24.chunk.js",
     "static/js/2.21507e24.chunk.js.map": "/react-ant-app/static/js/2.21507e24.chunk.js.map",
     "index.html": "/react-ant-app/index.html",
-    "precache-manifest.20645475ffd4342314fd412d13b3f9e6.js": "/react-ant-app/precache-manifest.20645475ffd4342314fd412d13b3f9e6.js",
+    "precache-manifest.045abc894be291949c96224566ae533d.js": "/react-ant-app/precache-manifest.045abc894be291949c96224566ae533d.js",
     "service-worker.js": "/react-ant-app/service-worker.js",
     "static/css/2.9c8c8187.chunk.css.map": "/react-ant-app/static/css/2.9c8c8187.chunk.css.map",
     "static/css/main.2e42de9b.chunk.css.map": "/react-ant-app/static/css/main.2e42de9b.chunk.css.map",
@@ -29,6 +29,6 @@
     "static/css/2.9c8c8187.chunk.css",
     "static/js/2.21507e24.chunk.js",
     "static/css/main.2e42de9b.chunk.css",
-    "static/js/main.6de71c1c.chunk.js"
+    "static/js/main.b8ba3ce0.chunk.js"
   ]
 }
