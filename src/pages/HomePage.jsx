@@ -6,7 +6,7 @@ import SupportComponent from '../components/SupportComponent';
 import QuotesComponents from '../components/QuotesComponents';
 import FooterComponent from '../components/FooterComponent';
 import CollapseComponent from '../components/CollapseComponent';
-import MainComponent from '../components/MainComponent';
+import BannerComponent from '../components/BannerComponent';
 
 class HomePage extends React.Component {
   componentDidMount() {
@@ -16,7 +16,7 @@ class HomePage extends React.Component {
     return (
       <div style={{ height: '100vh' }}>
         <HeaderComponent />
-        <MainComponent />
+        <BannerComponent />
         <SupportComponent />
         <AboutComponent />
         <PopularEntities />
