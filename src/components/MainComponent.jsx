@@ -7,6 +7,12 @@ import tallOne from '../assets/tallOne.jpg';
 import tallTwo from '../assets/tallTwo.jpg';
 import tallThree from '../assets/tallThree.jpg';
 import tallFour from '../assets/tallFour.jpg';
+import wideOneTiny from '../assets/wideOneTiny.jpg';
+import wideTwoTiny from '../assets/wideTwoTiny.jpg';
+import tallOneTiny from '../assets/tallOneTiny.jpg';
+import tallTwoTiny from '../assets/tallTwoTiny.jpg';
+import tallThreeTiny from '../assets/tallThreeTiny.jpg';
+import tallFourTiny from '../assets/tallFourTiny.jpg';
 import ProgressiveImage from 'react-progressive-image-loading';
 import { Link } from 'react-router-dom';
 
@@ -18,6 +24,7 @@ const MainComponent = () => {
       img: `${wideOne}`,
       position: 'center top',
       span: 12,
+      tiny: `${wideOneTiny}`,
       link: '/private-limited-company',
     },
     {
@@ -26,6 +33,7 @@ const MainComponent = () => {
       img: `${tallOne}`,
       position: 'center center',
       span: 6,
+      tiny: `${tallOneTiny}`,
       link: '/',
     },
     {
@@ -34,6 +42,7 @@ const MainComponent = () => {
       img: `${tallTwo}`,
       position: 'center center',
       span: 6,
+      tiny: `${tallTwoTiny}`,
       link: '/income-tax-return-1',
     },
     {
@@ -42,6 +51,7 @@ const MainComponent = () => {
       img: `${tallThree}`,
       position: 'center center',
       span: 6,
+      tiny: `${tallThreeTiny}`,
       link: '/provident-fund',
     },
     {
@@ -50,6 +60,7 @@ const MainComponent = () => {
       img: `${tallFour}`,
       position: 'center top',
       span: 6,
+      tiny: `${tallFourTiny}`,
       link: '/gst',
     },
     {
@@ -58,6 +69,7 @@ const MainComponent = () => {
       img: `${wideTwo}`,
       position: 'center center',
       span: 12,
+      tiny: `${wideTwoTiny}`,
       link: '',
     },
   ];
@@ -88,8 +100,10 @@ const MainComponent = () => {
             {banner.map((bg) => (
               <Col span={matches.small ? 24 : bg.span} key={bg.id}>
                 <ProgressiveImage
-                  preview={bg.img}
+                  preview={bg.tiny}
                   src={bg.img}
+                  transitionTime={5}
+                  transitionFunction='ease'
                   render={(src, style) => (
                     <div
                       style={Object.assign(style, {
@@ -97,8 +111,7 @@ const MainComponent = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
                         borderRadius: '8px',
-                        height: '300px',
-                        marginBottom: `14px`,
+                        marginBottom: `24px`,
                         border: 'none',
                         boxShadow: '5px 5px 10px rgba(0,0,0,.1)',
                       })}>
