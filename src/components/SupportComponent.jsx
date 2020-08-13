@@ -25,6 +25,7 @@ const SupportComponent = () => {
             margin: '18px auto',
             fontFamily: 'Source Sans Pro',
             width: matches.large ? '80%' : '100%',
+            textAlign: matches.small ? 'center' : 'left',
           }}>
           <Row gutter={16}>
             <Col span={matches.small ? 24 : 8}>

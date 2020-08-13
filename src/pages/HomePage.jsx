@@ -17,10 +17,10 @@ class HomePage extends React.Component {
       <div style={{ height: '100vh' }}>
         <HeaderComponent />
         <BannerComponent />
-        <SupportComponent />
         <AboutComponent />
         <PopularEntities />
         <QuotesComponents />
+        <SupportComponent />
         <CollapseComponent heading='Frequently Asked Questions' />
         <FooterComponent />
       </div>
