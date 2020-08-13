@@ -15,7 +15,7 @@ const CascaderComponent = () => {
             {
               value: 'Company Registration',
               label: 'Company Registration',
-              link: '/company',
+              link: '#/private-limited-company',
             },
             {
               value: 'Proprietorship Firm Registration',
@@ -134,26 +134,32 @@ const CascaderComponent = () => {
             {
               value: 'Income Tax Return-2',
               label: 'Income Tax Return-2',
+              link: '#/income-tax-return-2',
             },
             {
               value: 'Income Tax Return-3',
               label: 'Income Tax Return-3',
+              link: '#/income-tax-return-3',
             },
             {
               value: 'Income Tax Return-4',
               label: 'Income Tax Return-4',
+              link: '#/income-tax-return-4',
             },
             {
               value: 'Income Tax Return-5',
               label: 'Income Tax Return-5',
+              link: '#/income-tax-return-5',
             },
             {
               value: 'Income Tax Return-6',
               label: 'Income Tax Return-6',
+              link: '#/income-tax-return-6',
             },
             {
               value: 'Income Tax Return-7',
               label: 'Income Tax Return-7',
+              link: '#/income-tax-return-7',
             },
           ],
         },

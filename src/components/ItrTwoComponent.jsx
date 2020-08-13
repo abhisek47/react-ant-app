@@ -5,37 +5,39 @@ import { CheckCircleFilled, ExclamationCircleFilled } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import RegHeader from './RegHeader';
 
-const ItrOneComponent = () => {
+const ItrTwoComponent = () => {
   const eligibility = [
-    { id: 1, case: 'If the source of income is from one house property' },
-    { id: 2, case: 'If the source of income is from pension or salary' },
-    { id: 3, case: 'If the source of income is from other sources' },
-  ];
-  const ineligibility = [
-    { id: 1, case: 'The taxpayer whose income is more than Rs 50 lakhs' },
-    { id: 2, case: 'Non-residents and Residents but not ordinarily resident' },
-    { id: 3, case: 'Taxpayers who have two or more house properties' },
-    { id: 4, case: 'Taxpayer having income under business or profession' },
-    { id: 5, case: 'Taxpayers who have long or short-term capital gains' },
     {
-      id: 6,
+      id: 1,
       case:
-        'Taxpayers whose income from agriculture means is greater than Rs. 5,000',
+        'Taxpayer having income exceeding Rs. 50 Lakhsfrom salary,profession etc',
     },
+    { id: 2, case: 'Taxpayer Having foreign assets / income' },
+    {
+      id: 3,
+      case: 'Taxpayer Having agricultural income in excess of Rs. 5,000',
+    },
+    { id: 4, case: 'Taxpayer having income under capiatal gain' },
+    {
+      id: 5,
+      case: 'Taxpayer Having income from business or profession as a partner',
+    },
+    { id: 6, case: 'Taxpayer Having more than one house property' },
     {
       id: 7,
-      case:
-        'The taxpayer who claims relief for foreign taxes paid or claim double taxation relief as mentioned in section 90/90A/91.',
+      case: 'Taxpayers having DIN or owing private limited company shares.',
+    },
+  ];
+  const ineligibility = [
+    { id: 1, case: 'Itr2 cannot be filed by LLP' },
+    {
+      id: 2,
+      case: 'Itr2cannot be filled by company,society,trust,partnership etc',
     },
     {
-      id: 8,
+      id: 3,
       case:
-        'ITR 1 cannot be used by residents having any asset (including financial interest in any entity) located outside India or signing authority in any account located outside India.',
-    },
-    {
-      id: 9,
-      case:
-        'Form ITR-1 can no longer be filed by an individual who has brought forward/carry forward loss under the head “Income from house property.”',
+        'Itr2 cannot be filled by proprietor having business or professional income',
     },
   ];
   const GLOBAL_MEDIA_QUERIES = {
@@ -73,29 +75,29 @@ const ItrOneComponent = () => {
             <Breadcrumb.Item>
               <Link to='/'>Home</Link>
             </Breadcrumb.Item>
-            <Breadcrumb.Item>Income Tax Return - 1</Breadcrumb.Item>
+            <Breadcrumb.Item>Income Tax Return - 2</Breadcrumb.Item>
           </Breadcrumb>
           <Typography>
             <RegHeader
-              title='Income Tax Return - 1'
-              paraOne='ITR 1 - This Form is filed by the taxpayers and the individuals being a Resident (other thanNot Ordinarily Resident) having Total Income up to INR 50 lakhs, having Income from Salaries, One House Property, Other Sources (Interest etc.), and Agricultural Income up to INR 5 thousand. (Not for an Individual who is either Director in a company or has invested in Unlisted Equity Shares).'
-              tagline='Get your ITR-1 filing @₹ 1,800 Only'
+              title='Income Tax Return - 2'
+              paraOne='Individuals and Hindu Undivided Families who have their Income for the Financial Year through Salary or Pension, more than One House Property, Income from Capital Gains, Income from foreign assets/Income, Income from business or profession as a partner (not proprietor) and other sources including lottery, racehorses, legal gambling are eligible to file their IT Return using ITR-2. Individuals who are not eligible to file using ITR-1, because of their income exceeding ₹ 50 Lakhs are also eligible to file itr2.'
+              tagline='Get your ITR-2 filing @₹ 3,899 Only'
             />
             <Row gutter={24}>
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
-                    Due Date for Filing ITR 1 Online AY 2020-21
+                    Due Date for Filing ITR 2 Online AY 2020-21
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
-                    ITR -1 has to be filed on or before 30 Nov of the following
+                    ITR -2 has to be filed on or before 30 Nov of the following
                     year. After that, a late fee under section 234F is levied
                   </Paragraph>
                   <Title style={heading} level={2}>
-                    Eligibility to file ITR-1
+                    Eligibility to file ITR-2
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
-                    ITR-1 is filed by the taxpayers whose income is up to Rs 50
+                    ITR-2 is filed by the taxpayers whose income is up to Rs 50
                     lakhs from below- mentioned sources:
                   </Paragraph>
                   {eligibility.map((cases) => (
@@ -117,10 +119,10 @@ const ItrOneComponent = () => {
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
-                    Ineligibility to file ITR-1
+                    Ineligibility to file ITR-2
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
-                    ITR-1 is filed by the taxpayers whose income is up to Rs 50
+                    ITR-2 is filed by the taxpayers whose income is up to Rs 50
                     lakhs from below- mentioned sources:
                   </Paragraph>
                   {ineligibility.map((cases) => (
@@ -147,4 +149,4 @@ const ItrOneComponent = () => {
   );
 };
 
-export default ItrOneComponent;
+export default ItrTwoComponent;

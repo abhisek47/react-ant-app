@@ -5,37 +5,19 @@ import { CheckCircleFilled, ExclamationCircleFilled } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import RegHeader from './RegHeader';
 
-const ItrOneComponent = () => {
+const ItrSixComponent = () => {
   const eligibility = [
-    { id: 1, case: 'If the source of income is from one house property' },
-    { id: 2, case: 'If the source of income is from pension or salary' },
-    { id: 3, case: 'If the source of income is from other sources' },
+    {
+      id: 1,
+      case:
+        'companies that are not claiming any exemption under Section11 but if',
+    },
   ];
   const ineligibility = [
-    { id: 1, case: 'The taxpayer whose income is more than Rs 50 lakhs' },
-    { id: 2, case: 'Non-residents and Residents but not ordinarily resident' },
-    { id: 3, case: 'Taxpayers who have two or more house properties' },
-    { id: 4, case: 'Taxpayer having income under business or profession' },
-    { id: 5, case: 'Taxpayers who have long or short-term capital gains' },
     {
-      id: 6,
+      id: 1,
       case:
-        'Taxpayers whose income from agriculture means is greater than Rs. 5,000',
-    },
-    {
-      id: 7,
-      case:
-        'The taxpayer who claims relief for foreign taxes paid or claim double taxation relief as mentioned in section 90/90A/91.',
-    },
-    {
-      id: 8,
-      case:
-        'ITR 1 cannot be used by residents having any asset (including financial interest in any entity) located outside India or signing authority in any account located outside India.',
-    },
-    {
-      id: 9,
-      case:
-        'Form ITR-1 can no longer be filed by an individual who has brought forward/carry forward loss under the head “Income from house property.”',
+        'Companies are claiming an exemption u/s 11, who have Income from property held for charitable or religious purposes., then itr 6 cannot be filled.',
     },
   ];
   const GLOBAL_MEDIA_QUERIES = {
@@ -73,29 +55,22 @@ const ItrOneComponent = () => {
             <Breadcrumb.Item>
               <Link to='/'>Home</Link>
             </Breadcrumb.Item>
-            <Breadcrumb.Item>Income Tax Return - 1</Breadcrumb.Item>
+            <Breadcrumb.Item>Income Tax Return - 6</Breadcrumb.Item>
           </Breadcrumb>
           <Typography>
             <RegHeader
-              title='Income Tax Return - 1'
-              paraOne='ITR 1 - This Form is filed by the taxpayers and the individuals being a Resident (other thanNot Ordinarily Resident) having Total Income up to INR 50 lakhs, having Income from Salaries, One House Property, Other Sources (Interest etc.), and Agricultural Income up to INR 5 thousand. (Not for an Individual who is either Director in a company or has invested in Unlisted Equity Shares).'
-              tagline='Get your ITR-1 filing @₹ 1,800 Only'
+              title='Income Tax Return - 6'
+              paraOne='ITR Form 6 or ITR 6 is an income tax return form that is used by companies to e-file income tax return if they do not claim exemption under Section 11 of the Income Tax Act, 1961. Under existing Income Tax rules, companies that can claim exemption u/s 11 are those who have income from property that is held for charitable or religious purposes.'
+              tagline='Get your ITR-6 filing @₹ 5,000 Only'
             />
             <Row gutter={24}>
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
-                    Due Date for Filing ITR 1 Online AY 2020-21
+                    Eligibility to file ITR-6
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
-                    ITR -1 has to be filed on or before 30 Nov of the following
-                    year. After that, a late fee under section 234F is levied
-                  </Paragraph>
-                  <Title style={heading} level={2}>
-                    Eligibility to file ITR-1
-                  </Title>
-                  <Paragraph strong style={matches.large ? subHading : ''}>
-                    ITR-1 is filed by the taxpayers whose income is up to Rs 50
+                    ITR-6 is filed by the taxpayers whose income is up to Rs 50
                     lakhs from below- mentioned sources:
                   </Paragraph>
                   {eligibility.map((cases) => (
@@ -117,10 +92,10 @@ const ItrOneComponent = () => {
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
-                    Ineligibility to file ITR-1
+                    Ineligibility to file ITR-6
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
-                    ITR-1 is filed by the taxpayers whose income is up to Rs 50
+                    ITR-6 is filed by the taxpayers whose income is up to Rs 50
                     lakhs from below- mentioned sources:
                   </Paragraph>
                   {ineligibility.map((cases) => (
@@ -147,4 +122,4 @@ const ItrOneComponent = () => {
   );
 };
 
-export default ItrOneComponent;
+export default ItrSixComponent;

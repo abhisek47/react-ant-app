@@ -95,12 +95,14 @@ const PopularEntities = () => {
                   dataSource={comapny}
                   renderItem={(item) => <List.Item>{item}</List.Item>}
                 />
-                <Button
-                  type='primary'
-                  size='middle'
-                  style={{ marginTop: '24px' }}>
-                  Get Started
-                </Button>
+                <Link to='/private-limited-company'>
+                  <Button
+                    type='primary'
+                    size='middle'
+                    style={{ marginTop: '24px' }}>
+                    Get Started
+                  </Button>
+                </Link>
               </Card>
             </Col>
             <Col span={matches.small ? 24 : 8}>

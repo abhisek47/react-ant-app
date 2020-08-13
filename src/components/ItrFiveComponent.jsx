@@ -5,38 +5,27 @@ import { CheckCircleFilled, ExclamationCircleFilled } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import RegHeader from './RegHeader';
 
-const ItrOneComponent = () => {
+const ItrFiveComponent = () => {
   const eligibility = [
-    { id: 1, case: 'If the source of income is from one house property' },
-    { id: 2, case: 'If the source of income is from pension or salary' },
-    { id: 3, case: 'If the source of income is from other sources' },
+    { id: 1, case: 'Firms' },
+    { id: 2, case: 'Limited Liability Partnerships (LLPs)' },
+    { id: 3, case: 'Body of Individuals (BOIs)' },
+    { id: 4, case: 'Association of Persons (AOPs),' },
+    { id: 5, case: 'Co-operative Societies,' },
+    { id: 6, case: 'Artificial Judicial Persons,' },
+    { id: 7, case: 'Local Authorities.' },
   ];
   const ineligibility = [
-    { id: 1, case: 'The taxpayer whose income is more than Rs 50 lakhs' },
-    { id: 2, case: 'Non-residents and Residents but not ordinarily resident' },
-    { id: 3, case: 'Taxpayers who have two or more house properties' },
-    { id: 4, case: 'Taxpayer having income under business or profession' },
-    { id: 5, case: 'Taxpayers who have long or short-term capital gains' },
+    { id: 1, case: 'Trusts' },
+    { id: 2, case: 'Political party' },
+    { id: 3, case: 'Institutions' },
+    { id: 4, case: 'Colleges' },
+    { id: 5, case: 'Individuals' },
     {
       id: 6,
-      case:
-        'Taxpayers whose income from agriculture means is greater than Rs. 5,000',
+      case: 'HUFs (Hindu Undivided Families),',
     },
-    {
-      id: 7,
-      case:
-        'The taxpayer who claims relief for foreign taxes paid or claim double taxation relief as mentioned in section 90/90A/91.',
-    },
-    {
-      id: 8,
-      case:
-        'ITR 1 cannot be used by residents having any asset (including financial interest in any entity) located outside India or signing authority in any account located outside India.',
-    },
-    {
-      id: 9,
-      case:
-        'Form ITR-1 can no longer be filed by an individual who has brought forward/carry forward loss under the head “Income from house property.”',
-    },
+    { id: 7, case: 'Companies' },
   ];
   const GLOBAL_MEDIA_QUERIES = {
     small: '(max-width: 767px)',
@@ -73,30 +62,29 @@ const ItrOneComponent = () => {
             <Breadcrumb.Item>
               <Link to='/'>Home</Link>
             </Breadcrumb.Item>
-            <Breadcrumb.Item>Income Tax Return - 1</Breadcrumb.Item>
+            <Breadcrumb.Item>Income Tax Return - 5</Breadcrumb.Item>
           </Breadcrumb>
           <Typography>
             <RegHeader
-              title='Income Tax Return - 1'
-              paraOne='ITR 1 - This Form is filed by the taxpayers and the individuals being a Resident (other thanNot Ordinarily Resident) having Total Income up to INR 50 lakhs, having Income from Salaries, One House Property, Other Sources (Interest etc.), and Agricultural Income up to INR 5 thousand. (Not for an Individual who is either Director in a company or has invested in Unlisted Equity Shares).'
-              tagline='Get your ITR-1 filing @₹ 1,800 Only'
+              title='Income Tax Return - 5'
+              paraOne='For individuals and HUF with income from profits of a business or profession. ITR 3 is the form used by the individuals and Hindu Undivided Families who are registered as ‘Partners’ in a firm. . This is applicable for the professionals but in a partnership profession. The partner must be earning income in the form of interest, salary, bonus, commission, etc.'
+              tagline='Get your ITR-5 filing @₹ 3,000 Only'
             />
             <Row gutter={24}>
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
-                    Due Date for Filing ITR 1 Online AY 2020-21
+                    Due Date for Filing ITR-5 Online AY 2020-21
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
-                    ITR -1 has to be filed on or before 30 Nov of the following
+                    ITR-5 has to be filed on or before 30 Nov of the following
                     year. After that, a late fee under section 234F is levied
                   </Paragraph>
                   <Title style={heading} level={2}>
-                    Eligibility to file ITR-1
+                    Eligibility to file ITR-5
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
-                    ITR-1 is filed by the taxpayers whose income is up to Rs 50
-                    lakhs from below- mentioned sources:
+                    ITR-5 form is to be used only by the following entities:
                   </Paragraph>
                   {eligibility.map((cases) => (
                     <Space align='baseline' key={cases.id}>
@@ -117,10 +105,10 @@ const ItrOneComponent = () => {
               <Col span={matches.small ? 24 : 12}>
                 <Space direction='vertical' style={{ marginTop: '24px' }}>
                   <Title style={heading} level={2}>
-                    Ineligibility to file ITR-1
+                    Ineligibility to file ITR-5
                   </Title>
                   <Paragraph strong style={matches.large ? subHading : ''}>
-                    ITR-1 is filed by the taxpayers whose income is up to Rs 50
+                    ITR-5 is filed by the taxpayers whose income is up to Rs 50
                     lakhs from below- mentioned sources:
                   </Paragraph>
                   {ineligibility.map((cases) => (
@@ -147,4 +135,4 @@ const ItrOneComponent = () => {
   );
 };
 
-export default ItrOneComponent;
+export default ItrFiveComponent;

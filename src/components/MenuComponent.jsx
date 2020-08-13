@@ -48,7 +48,7 @@ class MenuComponent extends React.Component {
             </span>
           }>
           <Menu.Item key='1'>
-            <Link to='/'>Company Registration</Link>
+            <Link to='/private-limited-company'>Company Registration</Link>
           </Menu.Item>
           <Menu.Item key='2'>Proprietorship Firm Registration</Menu.Item>
           <Menu.Item key='3'>Unregistered Partnership</Menu.Item>
@@ -86,12 +86,24 @@ class MenuComponent extends React.Component {
           <Menu.Item key='17'>
             <Link to='/income-tax-return-1'>Income Tax Return - 1</Link>
           </Menu.Item>
-          <Menu.Item key='18'>Income Tax Return - 2</Menu.Item>
-          <Menu.Item key='19'>Income Tax Return - 3</Menu.Item>
-          <Menu.Item key='20'>Income Tax Return - 4</Menu.Item>
-          <Menu.Item key='21'>Income Tax Return - 5</Menu.Item>
-          <Menu.Item key='22'>Income Tax Return - 6</Menu.Item>
-          <Menu.Item key='23'>Income Tax Return - 7</Menu.Item>
+          <Menu.Item key='18'>
+            <Link to='/income-tax-return-2'>Income Tax Return - 2</Link>
+          </Menu.Item>
+          <Menu.Item key='19'>
+            <Link to='/income-tax-return-3'>Income Tax Return - 3</Link>
+          </Menu.Item>
+          <Menu.Item key='19'>
+            <Link to='/income-tax-return-4'>Income Tax Return - 4</Link>
+          </Menu.Item>
+          <Menu.Item key='19'>
+            <Link to='/income-tax-return-5'>Income Tax Return - 5</Link>
+          </Menu.Item>
+          <Menu.Item key='19'>
+            <Link to='/income-tax-return-6'>Income Tax Return - 6</Link>
+          </Menu.Item>
+          <Menu.Item key='19'>
+            <Link to='/income-tax-return-7'>Income Tax Return - 7</Link>
+          </Menu.Item>
           <Menu.Item key='24'>
             <Link to='/tax-deducted-at-source'>TDS Return</Link>
           </Menu.Item>

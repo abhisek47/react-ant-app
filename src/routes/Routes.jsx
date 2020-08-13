@@ -11,6 +11,13 @@ import IsoPage from '../pages/IsoPage';
 import TdsPage from '../pages/TdsPage';
 import ImportExportPage from '../pages/ImortExportPage';
 import ItrOnePage from '../pages/ItrOnePage';
+import ItrTwoPage from '../pages/ItrTwoPage';
+import ItrThreePage from '../pages/ItrThreePage';
+import ItrFourPage from '../pages/ItrFourPage';
+import ItrFivePage from '../pages/ItrFivePage';
+import ItrSixPage from '../pages/ItrSixPage';
+import ItrSevenPage from '../pages/ItrSevenPage';
+import CompanyPage from '../pages/CompanyPage';
 
 const Routes = () => {
   return (
@@ -35,6 +42,17 @@ const Routes = () => {
             component={ImportExportPage}
           />
           <Route exact path='/income-tax-return-1' component={ItrOnePage} />
+          <Route exact path='/income-tax-return-2' component={ItrTwoPage} />
+          <Route exact path='/income-tax-return-3' component={ItrThreePage} />
+          <Route exact path='/income-tax-return-4' component={ItrFourPage} />
+          <Route exact path='/income-tax-return-5' component={ItrFivePage} />
+          <Route exact path='/income-tax-return-6' component={ItrSixPage} />
+          <Route exact path='/income-tax-return-7' component={ItrSevenPage} />
+          <Route
+            exact
+            path='/private-limited-company'
+            component={CompanyPage}
+          />
           <Route exact path='*' component={NotFoundPage} />
         </Switch>
       </Router>
