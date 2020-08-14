@@ -18,22 +18,19 @@ const PopularEntities = () => {
     medium: '(min-width: 768px) and (max-width: 1199px)',
     large: '(min-width: 1200px)',
   };
-  const gst = [
+  const taxFiling = [
     'GST registration/ Rs. 1000+18%',
     'GSTR 1 and GSTR 3B return filing / Rs. 820+18%',
-    'GST9 return filing/ Rs. 2500+18%',
-    'GST4A return filing/ Rs. 2000+18%',
+    'TDS return filing/ Rs. 1899+18%',
   ];
-  const incomeTax = [
-    'Income tax return - 1/ Rs. 700+18%',
-    'Income tax return - 2/ Rs. 2456+18%',
-    'Income tax return - 3/ Rs. 3300+18%',
-    'Income tax return - 4/ Rs. 2540+18%',
+  const compliances = [
+    'Provident fund/ Rs. 2456+18%',
+    'Employees state incuranc/  Rs. 3300+18%',
+    'Partnership firm, Socity, NGO/ Rs. 2540+18%',
   ];
   const comapny = [
     'Company registration/ Rs. 10000+18%',
-    'Proprietorship firm registration/ Rs. 4000+18%',
-    'Registered partnership/ Rs. 9000+18%',
+    'Trademark/ Rs. 4000+18%',
     'LLP registration/ Rs. 10000+18%',
   ];
   const matches = useMedia({ queries: GLOBAL_MEDIA_QUERIES });
@@ -64,13 +61,13 @@ const PopularEntities = () => {
             <Col span={matches.small ? 24 : 8}>
               <Card style={{ width: '100%', marginTop: '16px' }}>
                 <Typography>
-                  <Title level={4}>GST Registration</Title>
+                  <Title level={4}>Tax Filing</Title>
                 </Typography>
                 <Divider orientation='left'>Speacial Entities</Divider>
                 <List
                   size='small'
                   bordered
-                  dataSource={gst}
+                  dataSource={taxFiling}
                   renderItem={(item) => <List.Item>{item}</List.Item>}
                 />
                 <Link to='/gst'>
@@ -86,7 +83,7 @@ const PopularEntities = () => {
             <Col span={matches.small ? 24 : 8}>
               <Card style={{ width: '100%', marginTop: '16px' }}>
                 <Typography>
-                  <Title level={4}>Company Registration</Title>
+                  <Title level={4}>Company Filing</Title>
                 </Typography>
                 <Divider orientation='left'>Speacial Entities</Divider>
                 <List
@@ -108,13 +105,13 @@ const PopularEntities = () => {
             <Col span={matches.small ? 24 : 8}>
               <Card style={{ width: '100%', marginTop: '16px' }}>
                 <Typography>
-                  <Title level={4}>Income Tax Return</Title>
+                  <Title level={4}>Compliances Filing</Title>
                 </Typography>
                 <Divider orientation='left'>Speacial Entities</Divider>
                 <List
                   size='small'
                   bordered
-                  dataSource={incomeTax}
+                  dataSource={compliances}
                   renderItem={(item) => <List.Item>{item}</List.Item>}
                 />
                 <Link to='/income-tax-return-1'>

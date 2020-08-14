@@ -18,6 +18,8 @@ import ItrFivePage from '../pages/ItrFivePage';
 import ItrSixPage from '../pages/ItrSixPage';
 import ItrSevenPage from '../pages/ItrSevenPage';
 import CompanyPage from '../pages/CompanyPage';
+import TrademarkPage from '../pages/TrademarkPage';
+import RenewTrademarkPage from '../pages/RenewTrademarkPage';
 
 const Routes = () => {
   return (
@@ -52,6 +54,12 @@ const Routes = () => {
             exact
             path='/private-limited-company'
             component={CompanyPage}
+          />
+          <Route exact path='/trademark' component={TrademarkPage} />
+          <Route
+            exact
+            path='/trademark-renewal'
+            component={RenewTrademarkPage}
           />
           <Route exact path='*' component={NotFoundPage} />
         </Switch>

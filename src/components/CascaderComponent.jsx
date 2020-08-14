@@ -64,14 +64,12 @@ const CascaderComponent = () => {
             {
               value: 'Trademark Registration',
               label: 'Trademark Registration',
-            },
-            {
-              value: 'Trademark Objection',
-              label: 'Trademark Objection',
+              link: '/trademark',
             },
             {
               value: 'Trademark Renewal',
               label: 'Trademark Renewal',
+              link: '/trademark-renewal',
             },
           ],
         },

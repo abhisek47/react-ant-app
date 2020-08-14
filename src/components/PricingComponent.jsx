@@ -66,25 +66,29 @@ const PricingComponent = ({
             </Card>
           </Col>
           <Col span={matches.small ? 24 : 8}>
-            <Card
-              style={{ marginTop: '16px' }}
-              title={<Title level={4}>Premium</Title>}
-              extra={<Title level={3}> &#x20b9; {premiumPrice}</Title>}>
-              <List
-                size='small'
-                bordered
-                dataSource={premium}
-                renderItem={(item) => <List.Item>{item}</List.Item>}
-              />
-              <Link to='/gst'>
-                <Button
-                  type='primary'
-                  size='middle'
-                  style={{ marginTop: '24px' }}>
-                  Buy Now
-                </Button>
-              </Link>
-            </Card>
+            {premium === 'none' ? (
+              <Card style={{ display: 'none' }}></Card>
+            ) : (
+              <Card
+                style={{ marginTop: '16px' }}
+                title={<Title level={4}>Premium</Title>}
+                extra={<Title level={3}> &#x20b9; {premiumPrice}</Title>}>
+                <List
+                  size='small'
+                  bordered
+                  dataSource={premium}
+                  renderItem={(item) => <List.Item>{item}</List.Item>}
+                />
+                <Link to='/gst'>
+                  <Button
+                    type='primary'
+                    size='middle'
+                    style={{ marginTop: '24px' }}>
+                    Buy Now
+                  </Button>
+                </Link>
+              </Card>
+            )}
           </Col>
         </Row>
       </Content>

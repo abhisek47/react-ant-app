@@ -62,10 +62,13 @@ class MenuComponent extends React.Component {
           </Menu.Item>
         </SubMenu>
         <SubMenu key='sub2' icon={<AppstoreOutlined />} title='Property'>
-          <Menu.Item key='8'>Trademark Registration</Menu.Item>
-          <Menu.Item key='9'>Trademark Objection</Menu.Item>
-          <Menu.Item key='10'>Trademark Renewal</Menu.Item>
-          <Menu.Item key='11'>Copyright Registration</Menu.Item>
+          <Menu.Item key='8'>
+            <Link to='/trademark'>Trademark Registration</Link>
+          </Menu.Item>
+          <Menu.Item key='9'>
+            <Link to='/trademark-renewal'>Trademark Renewal</Link>
+          </Menu.Item>
+          <Menu.Item key='10'>Copyright Registration</Menu.Item>
         </SubMenu>
         <SubMenu key='sub3' icon={<SettingOutlined />} title='Tax-Filing'>
           <Menu.Item key='12'>
@@ -92,16 +95,16 @@ class MenuComponent extends React.Component {
           <Menu.Item key='19'>
             <Link to='/income-tax-return-3'>Income Tax Return - 3</Link>
           </Menu.Item>
-          <Menu.Item key='19'>
+          <Menu.Item key='20'>
             <Link to='/income-tax-return-4'>Income Tax Return - 4</Link>
           </Menu.Item>
-          <Menu.Item key='19'>
+          <Menu.Item key='21'>
             <Link to='/income-tax-return-5'>Income Tax Return - 5</Link>
           </Menu.Item>
-          <Menu.Item key='19'>
+          <Menu.Item key='22'>
             <Link to='/income-tax-return-6'>Income Tax Return - 6</Link>
           </Menu.Item>
-          <Menu.Item key='19'>
+          <Menu.Item key='23'>
             <Link to='/income-tax-return-7'>Income Tax Return - 7</Link>
           </Menu.Item>
           <Menu.Item key='24'>
@@ -112,25 +115,25 @@ class MenuComponent extends React.Component {
         <SubMenu key='sub4' icon={<DatabaseOutlined />} title='Compliances'>
           <Menu.Item key='26'>Private Limited Company</Menu.Item>
           <Menu.Item key='27'>LLP Annual Compliances</Menu.Item>
-          <Menu.Item key='29'>
+          <Menu.Item key='28'>
             <Link to='/provident-fund'>PF Registration</Link>
           </Menu.Item>
-          <Menu.Item key='30'>
+          <Menu.Item key='29'>
             <Link to='/employees-state-insurance'>ESI Registration</Link>
           </Menu.Item>
-          <Menu.Item key='31'>
+          <Menu.Item key='30'>
             <Link to='/employees-state-insurance-return'>
               ESI Return Filing
             </Link>
           </Menu.Item>
-          <Menu.Item key='32'>PAN Application</Menu.Item>
-          <Menu.Item key='33'>TAN Application</Menu.Item>
-          <Menu.Item key='34'>80G Registration</Menu.Item>
+          <Menu.Item key='31'>PAN Application</Menu.Item>
+          <Menu.Item key='32'>TAN Application</Menu.Item>
+          <Menu.Item key='33'>80G Registration</Menu.Item>
         </SubMenu>
         <SubMenu key='sub5' icon={<AppstoreAddOutlined />} title='Resources'>
-          <Menu.Item key='35'>Terms And Conditions</Menu.Item>
-          <Menu.Item key='36'>Privacy Policy</Menu.Item>
-          <Menu.Item key='37'>Declimar Policy</Menu.Item>
+          <Menu.Item key='34'>Terms And Conditions</Menu.Item>
+          <Menu.Item key='35'>Privacy Policy</Menu.Item>
+          <Menu.Item key='36'>Declimar Policy</Menu.Item>
         </SubMenu>
       </Menu>
     );
