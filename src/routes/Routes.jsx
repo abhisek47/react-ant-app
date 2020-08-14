@@ -20,52 +20,60 @@ import ItrSevenPage from '../pages/ItrSevenPage';
 import CompanyPage from '../pages/CompanyPage';
 import TrademarkPage from '../pages/TrademarkPage';
 import RenewTrademarkPage from '../pages/RenewTrademarkPage';
+import LoginPage from '../pages/LoginPage';
 
-const Routes = () => {
-  return (
-    <React.Fragment>
-      <Router basename='/'>
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route exact path='/gst' component={GstPage} />
-          <Route exact path='/gst-return' component={GstReturnPage} />
-          <Route exact path='/provident-fund' component={PfPage} />
-          <Route exact path='/employees-state-insurance' component={EsiPage} />
-          <Route
-            exact
-            path='/employees-state-insurance-return'
-            component={EsiReturnPage}
-          />
-          <Route exact path='/iso' component={IsoPage} />
-          <Route exact path='/tax-deducted-at-source' component={TdsPage} />
-          <Route
-            exact
-            path='/import-export-code'
-            component={ImportExportPage}
-          />
-          <Route exact path='/income-tax-return-1' component={ItrOnePage} />
-          <Route exact path='/income-tax-return-2' component={ItrTwoPage} />
-          <Route exact path='/income-tax-return-3' component={ItrThreePage} />
-          <Route exact path='/income-tax-return-4' component={ItrFourPage} />
-          <Route exact path='/income-tax-return-5' component={ItrFivePage} />
-          <Route exact path='/income-tax-return-6' component={ItrSixPage} />
-          <Route exact path='/income-tax-return-7' component={ItrSevenPage} />
-          <Route
-            exact
-            path='/private-limited-company'
-            component={CompanyPage}
-          />
-          <Route exact path='/trademark' component={TrademarkPage} />
-          <Route
-            exact
-            path='/trademark-renewal'
-            component={RenewTrademarkPage}
-          />
-          <Route exact path='*' component={NotFoundPage} />
-        </Switch>
-      </Router>
-    </React.Fragment>
-  );
-};
+class Routes extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Router basename='/'>
+          <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route exact path='/login' component={LoginPage} />
+            <Route exact path='/gst' component={GstPage} />
+            <Route exact path='/gst-return' component={GstReturnPage} />
+            <Route exact path='/provident-fund' component={PfPage} />
+            <Route
+              exact
+              path='/employees-state-insurance'
+              component={EsiPage}
+            />
+            <Route
+              exact
+              path='/employees-state-insurance-return'
+              component={EsiReturnPage}
+            />
+            <Route exact path='/iso' component={IsoPage} />
+            <Route exact path='/tax-deducted-at-source' component={TdsPage} />
+            <Route
+              exact
+              path='/import-export-code'
+              component={ImportExportPage}
+            />
+            <Route exact path='/income-tax-return-1' component={ItrOnePage} />
+            <Route exact path='/income-tax-return-2' component={ItrTwoPage} />
+            <Route exact path='/income-tax-return-3' component={ItrThreePage} />
+            <Route exact path='/income-tax-return-4' component={ItrFourPage} />
+            <Route exact path='/income-tax-return-5' component={ItrFivePage} />
+            <Route exact path='/income-tax-return-6' component={ItrSixPage} />
+            <Route exact path='/income-tax-return-7' component={ItrSevenPage} />
+            <Route
+              exact
+              path='/private-limited-company'
+              component={CompanyPage}
+            />
+            <Route exact path='/trademark' component={TrademarkPage} />
+            <Route
+              exact
+              path='/trademark-renewal'
+              component={RenewTrademarkPage}
+            />
+            <Route exact path='*' component={NotFoundPage} />
+          </Switch>
+        </Router>
+      </React.Fragment>
+    );
+  }
+}
 
 export default Routes;

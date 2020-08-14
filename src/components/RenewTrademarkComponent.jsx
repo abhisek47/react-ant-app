@@ -186,6 +186,22 @@ const RenewTrademarkComponent = () => {
                 </Space>
               </Col>
             </Row>
+            <Row>
+              <Col span={12}>
+                <Space direction='vertical' style={{ marginTop: '24px' }}>
+                  <Title style={heading} level={2}>
+                    Trademark can be renewed in two ways
+                  </Title>
+                  <Paragraph strong style={matches.large ? subHading : ''}>
+                    Renew your trademark for changing any sign or word in the
+                    existing mark
+                  </Paragraph>
+                  <Paragraph strong style={matches.large ? subHading : ''}>
+                    Renew your trademark without any change
+                  </Paragraph>
+                </Space>
+              </Col>
+            </Row>
           </Typography>
         </Content>
       </Layout>
